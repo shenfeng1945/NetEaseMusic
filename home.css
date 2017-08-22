@@ -272,14 +272,42 @@ body{
 }
 
 
-/*第二个页面*/
+/*....................第二个页面..................*/
 .tabs-content2{
     display: none;
 }
 .tabs-content2.active{
     display: block;
 }
-/*第三个页面*/
+/*热歌榜*/
+.tabs-content2 .hot-banner{
+   background: url('http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee') no-repeat center;
+    padding-left:20px;
+    padding-top:.1px;
+    padding-bottom:20px;
+}
+.tabs-content2 .hot-banner .hot-notice{
+   background: url('https://i.loli.net/2017/08/22/599c513e4c3f0.png') no-repeat -24px -30px;
+    width:142px;
+    height:67px;
+    background-size:166px 97px;
+    margin-top:15px;
+}
+.tabs-content2 .hot-banner .date{
+   font-size:12px;
+    margin-top:10px;
+    color: rgba(255,255,255,.8);
+}
+.tabs-content2 .hot-lists{}
+.tabs-content2 .hot-lists li{}
+.tabs-content2 .hot-lists .order{}
+.tabs-content2 .hot-lists .hot-item{}
+.tabs-content2 .hot-lists .hot-item h2{}
+.tabs-content2 .hot-lists .hot-item p{}
+.tabs-content2 .hot-lists .hot-play{}
+.tabs-content2 .whole-list{}
+
+/*.....................第三个页面.....................*/
 .tabs-content3{
     display: none;
 }
