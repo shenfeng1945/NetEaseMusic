@@ -2,13 +2,24 @@ body{
     font-family: Helvetica, sans-serif;
 }
 .page{
-    background: url('http://p3.music.126.net/nfAuKY8Gx5V3kFhzlc9c5w==/17756013277324793.jpg') no-repeat;
+    background:transparent url('http://p3.music.126.net/nfAuKY8Gx5V3kFhzlc9c5w==/17756013277324793.jpg') no-repeat;
     background-size:cover;
     display: flex;
     flex-direction:column;
     height:100vh;
     position: relative;
 }
+/*.page::after{*/
+    /*content:'';*/
+    /*display: block;*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*top:0;*/
+    /*width:100%;*/
+    /*height:100%;*/
+    /*background:#7f7f7f;*/
+    /*z-index:-1;*/
+/*}*/
 .disc-container{
     position:relative;
 }
@@ -17,16 +28,54 @@ body{
     top:0;
     left:44.8%;
     z-index:1;
+
 }
 .disc-container .pointer img{
    width:84px;
    height:122px;
 }
 .disc-container .disc{
+    position:relative;
     display: flex;
     justify-content:center;
     align-items:center;
     margin-top:63px;
+}
+.disc-container .disc .icon-wrap{
+    position:absolute;
+    z-index:1;
+    width:50px;
+    height:50px;
+    border:1px solid white;
+    border-radius:50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.4);
+}
+.disc-container .disc .icon-pause{
+    display: none;
+}
+.disc-container.playing .disc .icon-play{
+    display: none;
+}
+.disc-container.playing .disc .icon-pause{
+    display: flex;
+}
+.disc-container .pointer{
+    transform-origin: 0 0;
+    transform:rotateZ(-20deg);
+    transition: transform .5s ease;
+}
+.disc-container.playing .pointer{
+   transform: rotateZ(0deg) ;
+}
+.disc-container .disc .icon{
+    /*position: absolute;*/
+    fill:white;
+    width:18px;
+    height:18px;
+    /*z-index:2;*/
 }
 .disc-container .disc .ring{
     width:248px;
@@ -43,30 +92,30 @@ body{
     animation: circling 20s linear infinite;
 }
 
-.lyrcs{
+.lyrics{
     text-align:center;
     padding:0 35px;
     margin-top:22px;
 }
-.lyrcs .lyrc-head{
+.lyrics .lyric-head{
     font-size:15px;
     color:#fefefe;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
 }
-.lyrcs .lyrc-content{
+.lyrics .lyric-content{
    margin-top:13px;
     height:72px;
     overflow:hidden;
 }
-.lyrcs .lyrc-content p{
+.lyrics .lyric-content p{
     font-size:13px;
     color:rgba(255,255,255,.6);
     line-height:19px;
     padding-bottom:5px;
 }
-.lyrcs .lyrc-content p.lyrc-now{
+.lyrics .lyric-content p.lyric-now{
     color:white;
 }
 
@@ -93,7 +142,7 @@ body{
 }
 
 
-@keyframes circling{
+@keyframe circling{
     0%{
         transform: rotateZ(0deg)
     }
