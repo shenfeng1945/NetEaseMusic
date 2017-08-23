@@ -1,0 +1,103 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+.page{
+    background: url('http://p3.music.126.net/nfAuKY8Gx5V3kFhzlc9c5w==/17756013277324793.jpg') no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction:column;
+    height:100vh;
+    position: relative;
+}
+.disc-container{
+    position:relative;
+}
+.disc-container .pointer{
+    position:absolute;
+    top:0;
+    left:44.8%;
+    z-index:1;
+}
+.disc-container .pointer img{
+   width:84px;
+   height:122px;
+}
+.disc-container .disc{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:63px;
+}
+.disc-container .disc .ring{
+    width:248px;
+}
+.disc-container .disc .light{
+    position:absolute;
+    width:248px;
+    animation: circling 20s linear infinite;
+}
+.disc-container .disc .center-image{
+    position:absolute;
+    width:150px;
+    border-radius:50%;
+    animation: circling 20s linear infinite;
+}
+
+.lyrcs{
+    text-align:center;
+    padding:0 35px;
+    margin-top:22px;
+}
+.lyrcs .lyrc-head{
+    font-size:15px;
+    color:#fefefe;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.lyrcs .lyrc-content{
+   margin-top:13px;
+    height:72px;
+    overflow:hidden;
+}
+.lyrcs .lyrc-content p{
+    font-size:13px;
+    color:rgba(255,255,255,.6);
+    line-height:19px;
+    padding-bottom:5px;
+}
+.lyrcs .lyrc-content p.lyrc-now{
+    color:white;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    margin-top:75px;
+}
+.links .open{
+    color:#d43b32;
+    font-size:15px;
+    border:1px solid #d43b32;
+    padding:7px 42.5px;
+    border-radius:4px;
+}
+.links .download{
+    font-size:15px;
+   background:#d43b32;
+    color:white;
+    padding:7px 42.5px;
+    border-radius:4px;
+    margin-left:12px;
+}
+
+
+@keyframes circling{
+    0%{
+        transform: rotateZ(0deg)
+    }
+    100%{
+        transform: rotateZ(360deg)
+    }
+}
