@@ -136,6 +136,7 @@ body{
 .recommend-list > ol.lists li{
    max-width:calc(33.3333% - 2px);
     margin-bottom:16px;
+    position:relative;
 }
 .recommend-list > ol.lists li img{
     max-width:104.5px;
@@ -150,6 +151,19 @@ body{
     font-size:13px;
     padding:6px 2px 0 6px;
     line-height:1.2;
+}
+.recommend-list > ol.lists li span{
+    position:absolute;
+    right:5px;
+    top:2px;
+    color:white;
+    font-size:12px;
+}
+.recommend-list > ol.lists li span i{
+}
+.recommend-list > ol.lists li span i svg{
+   width:11px;
+    height:10px;
 }
 /*最新音乐*/
 .new-music{
@@ -278,14 +292,27 @@ body{
 }
 .tabs-content2.active{
     display: block;
+
 }
 /*热歌榜*/
 .tabs-content2 .hot-banner{
-   background: url('http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee') no-repeat center;
+   background: transparent url('http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee') no-repeat center;
     padding-left:20px;
     padding-top:.1px;
-    padding-bottom:20px;
+    padding-bottom:16px;
+    /*position:relative;*/
 }
+/*.tabs-content2 .hot-banner::after{*/
+    /*content:'';*/
+    /*display: block;*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*top:0;*/
+    /*width:100%;*/
+    /*height:100%;*/
+    /*background: rgba(202,202,203,.2);*/
+    /*z-index:0;*/
+/*}*/
 .tabs-content2 .hot-banner .hot-notice{
    background: url('https://i.loli.net/2017/08/22/599c513e4c3f0.png') no-repeat -24px -30px;
     width:142px;
@@ -297,15 +324,118 @@ body{
    font-size:12px;
     margin-top:10px;
     color: rgba(255,255,255,.8);
+    transform:scale(.91);
+    transform-origin: 0 0;
 }
-.tabs-content2 .hot-lists{}
-.tabs-content2 .hot-lists li{}
-.tabs-content2 .hot-lists .order{}
-.tabs-content2 .hot-lists .hot-item{}
-.tabs-content2 .hot-lists .hot-item h2{}
-.tabs-content2 .hot-lists .hot-item p{}
-.tabs-content2 .hot-lists .hot-play{}
-.tabs-content2 .whole-list{}
+/*热歌列表*/
+.tabs-content2 .hot-lists{
+    background:#fcfcfd;
+}
+.tabs-content2 .hot-lists li{
+    display: flex;
+    justify-content:space-between;
+    padding-left:10px;
+    align-items:center;
+}
+.tabs-content2 .hot-lists li .item-play-wrap{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.tabs-content2 .hot-lists li .item-play-wrap::after{
+   content:'';
+    display: block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    /*height:200%;*/
+    width:200%;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    transform: scale(.5);
+    transform-origin:0 0;
+}
+.tabs-content2 .hot-lists .order{
+    font-size:17px;
+    width:28px;
+    margin-top:1px;
+    color:#999;
+}
+.tabs-content2 .hot-lists li:first-child .order{
+    color:#d33a31;
+}
+.tabs-content2 .hot-lists li:nth-child(2) .order{
+    color:#d33a31;
+}
+.tabs-content2 .hot-lists li:nth-child(3) .order{
+    color:#d33a31;
+}
+.tabs-content2 .hot-lists .hot-item{
+    width:240px;
+    padding:5.5px 0;
+}
+.tabs-content2 .hot-lists .hot-item h2{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size:17px;
+    padding:1px 0;
+    /*line-height:25px;*/
+}
+.tabs-content2 .hot-lists .hot-item h2 span{
+    color:#888;
+}
+.tabs-content2 .hot-lists .hot-item p{
+    font-size:12px;
+    color:#888;
+    padding:1px 0;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.tabs-content2 .hot-lists .hot-item p i{
+    width:12px;
+    height:8px;
+    margin-right:-2px;
+    vertical-align: middle;
+    margin-left:-3px;
+    display: none;
+}
+.tabs-content2 .hot-lists .hot-item p i.active{
+    display: inline;
+}
+.tabs-content2 .hot-lists .hot-item p i svg{
+    display: none;
+}
+.tabs-content2 .hot-lists .hot-item p i.active svg{
+    display: inline;
+    width:18px;
+    height:12px;
+    vertical-align:bottom;
+}
+.tabs-content2 .hot-lists .hot-play{
+    padding:0 10px;
+}
+.tabs-content2 .hot-lists .hot-play svg{
+    width:22px;
+    height:22px;
+}
+.tabs-content2 .whole-list{
+    color:#999;
+    font-size:14px;
+    text-align: center;
+    background:#fcfcfd;
+}
+.tabs-content2 .whole-list span{
+    display: inline-block;
+   line-height: 55px;
+    padding-right:3px;
+}
+.tabs-content2 .whole-list i svg{
+   width:7px;
+    height:12px;
+    vertical-align: middle;
+}
 
 /*.....................第三个页面.....................*/
 .tabs-content3{
