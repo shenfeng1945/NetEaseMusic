@@ -47,7 +47,6 @@ body{
     flex-direction: column;
     align-items:center; */
     margin-top:63px;
-    outline:1px solid ;
     height:248px;
 }
 .disc-container .disc .icon-wrap{
@@ -105,7 +104,7 @@ body{
     border-radius:50%;
     animation: circling 20s linear infinite;
     animation-play-state: paused;
-    z-index:1;
+    z-index:2;
 }
 .disc-container.playing .disc .center-image{
     animation-play-state: running;
