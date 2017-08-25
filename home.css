@@ -5,9 +5,22 @@ body{
 }
 .page{
 }
+/*两个标题公共的部分写在一起*/
+.sectionTitle{
+    font-size:17px;
+    color:#333;
+    line-height:1;
+    padding-left:7px;
+    border-left:2px solid #D33A31;
+    margin:21px 0 16px;
+}
+
+
+
+
 /*top-bar*/
-.top-wrapper{
-    height:64px;
+.top-control-wrapper{
+    height:104px;
 }
 .top-bar{
     background:#D43C33;
@@ -53,10 +66,6 @@ body{
 }
 
 /*tabs-control*/
-.tabs-wrapper{
-    height: 39.5px;
-
-}
 .tabs-control{
     position: fixed;
     left:0;
@@ -93,6 +102,7 @@ body{
 .tabs-control ol li div{
     padding:0 5px;
     display: inline-block;
+    /*line-height: 38px;*/
 }
 .tabs-control ol li.active div{
     border-bottom:2px solid #d33a31;
@@ -107,34 +117,12 @@ body{
     display: block;
 }
 /*推荐歌单*/
-.recommend-list{
-    padding-top:20px;
-}
-.recommend-list > .recommend-head {
-    padding-left:9px;
-    position:relative;
-    line-height:20px;
-}
-.recommend-list > .recommend-head::before{
-    content:'';
-    display: block;
-    width:2px;
-    height:16px;
-    background: #d33a31;
-    position:absolute;
-    left:0;
-    top:46%;
-    transform:translateY(-50%);
-}
-.recommend-list > .recommend-head h2{
-    font-size:17px;
-    color:#333;
-}
+
 .recommend-list > ol.lists{
     display: flex;
     flex-wrap:wrap;
     justify-content:space-between;
-    margin-top:14px;
+    /*margin-top:16px;*/
 }
 .recommend-list > ol.lists li{
     /* min-width:calc(33.3333% - 2px); */
@@ -172,27 +160,7 @@ body{
 }
 /*最新音乐*/
 .new-music{
-    margin-top:23px;
-}
-.new-music .new-head{
-    margin-bottom:12px;
-}
-.new-music .new-head h2{
-    font-size:17px;
-    position:relative;
-    padding-left:9px;
-    line-height:20px;
-}
-.new-music .new-head h2::before{
-    content:'';
-    display: block;
-    position:absolute;
-    left:0;
-    top:46%;
-    transform:translateY(-50%);
-    background:#d33a31;
-    width:2px;
-    height:16px;
+    margin-top:24px;
 }
 .new-music .loading{
     text-align:center;
@@ -255,13 +223,12 @@ body{
     vertical-align: middle;
     margin-left:-3px;
 }
-.new-music ul.new-lists li p i.hidden {
-    display: none;
-}
-.new-music ul.new-lists li p i.active svg{
-    width:18px;
-    height:12px;
-    vertical-align: bottom;
+.icon-sq{
+    width:1em;
+    height:1em;
+    fill:#FE672E;
+    vertical-align:middle;
+    overflow:hidden;
 }
 .new-music ul.new-lists li .play {
     display: flex;
@@ -545,4 +512,11 @@ body{
     border:1px solid rgba(0,0,0,.2);
     transform:scale(.5);
     transform-origin:0 0;
+}
+.tabs-content3 .hot-search #searchResults.hidden{
+    display:none;
+}
+.tabs-content3 .hot-search #searchResults{
+    display: block;
+    
 }

@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="./reset.css">
     <script src="//at.alicdn.com/t/font_393027_y3ics43mx05xko6r.js"></script>
-    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>网易云音乐</title>
 </head>
 
 <body>
     <div class="page">
-        <div class="top-wrapper">
+        <div class="top-control-wrapper">
               <section class="top-bar">
             <div class="logo">
                 <svg class="topsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 50" data-reactid="6">
@@ -24,8 +23,6 @@
             </div>
          <div class="download">下载APP</div>
         </section>
-        </div>
-        <div class="tabs-wrapper">
         <section class="tabs-control">
             <ol class="tabs">
                 <li class="active">
@@ -44,9 +41,7 @@
         <ol class="tabsContent">
             <li class="tabs-content1 active">
             <div class="recommend-list">
-                <div class="recommend-head">
-                    <h2>推荐歌单</h2>
-                </div>
+                <h2 class="sectionTitle">推荐歌单</h2>
                 <ol class="lists">
                     <li>
                         <img src="https://ooo.0o0.ooo/2017/08/24/599ecc042012b.jpg" alt="">
@@ -93,213 +88,12 @@
                 </ol>
             </div>
             <div class="new-music">
-                <div class="new-head">
-                    <h2>最新音乐</h2>
-                </div>
+                <h2 class="sectionTitle">最新音乐</h2>
                 <div class="loading">
                    <img src="https://i.loli.net/2017/08/24/599eabe9caa83.gif" alt="">
                 </div>
                 <ul class="new-lists">
-                    <li>
-                        <a href="./song.html">
-                            <div class="music-item">
-                                <h2>我的一个道姑朋友（Cover：Lon&タイナカ彩智）<span></span></h2>
-                                <p>
-                                    <i class="active">
-                                        <svg>
-                                            <use xlink:href="#icon-sq"></use>
-                                        </svg>
-                                    </i>
-                                    以冬 - 我的一个道姑朋友
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about:blank">
-                            <div class="music-item">
-                                <h2>비라도 계속 내렸으면</h2>
-                                <p><i class="active">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>MJ / Ra.L - 비라도 계속 내렸으면
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="music-item">
-                                <h2>纯白 ( feat.V.K克x双笙</h2>
-                                <p><i class="active">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>双笙/V.K克 - 纯白(feat.V.K克x双笙
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                     <li>
-                         <a href="#">
-                             <div class="music-item">
-                                 <h2>There She Go</h2>
-                                 <p><i class="hidden">
-                                     <svg>
-                                         <use xlink:href="#icon-sq"></use>
-                                     </svg>
-                                 </i>Fetty Wap / Monty - Three She Go
-                                 </p>
-                             </div>
-                             <div class="play">
-                                 <svg>
-                                     <use xlink:href="#icon-play"></use>
-                                 </svg>
-                             </div>
-                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="music-item">
-                                <h2>The East Land Symphony I. The East Land</h2>
-                                <p><i class="hidden">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>久石譲-ミニマリズム 3
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="music-item">
-                                <h2>デンジャラス・サンシャイン (Off Vocal)</h2>
-                                <p><i class="hidden">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>茅野愛衣 - TVアニメ「戦姫絶唱シンフォギアAXZ」キャラクターソング5 暁切歌
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="music-item">
-                                <h2>如果我是一首歌<span>(电视剧《盲约》插曲)</span></h2>
-                                <p><i class="active">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>岑宁儿 - 如果我是一首歌
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="music-item">
-                                <h2>비라도 계속 내렸으면</h2>
-                                <p><i class="active">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>MJ / Ra.L - 비라도 계속 내렸으면
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="music-item">
-                                <h2>等着你回来 (Remix版)</h2>
-                                <p><i class="active">
-                                    <svg>
-                                        <use xlink:href="#icon-sq"></use>
-                                    </svg>
-                                </i>刘涛 - 等着你回来 (Remix版)
-                                </p>
-                            </div>
-                            <div class="play">
-                                <svg>
-                                    <use xlink:href="#icon-play"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                     <li>
-                         <a href="#">
-                             <div class="music-item">
-                                 <h2>Stand Up Again</h2>
-                                 <p><i class="active">
-                                     <svg>
-                                         <use xlink:href="#icon-sq"></use>
-                                     </svg>
-                                 </i>苏醒 / 何洁 - Stand Up Again
-                                 </p>
-                             </div>
-                             <div class="play">
-                                 <svg>
-                                     <use xlink:href="#icon-play"></use>
-                                 </svg>
-                             </div>
-                         </a>
-                    </li>
-                      <li>
-                          <a href="#">
-                              <div class="music-item">
-                                  <h2>我有一把枪</h2>
-                                  <p><i class="active">
-                                      <svg>
-                                          <use xlink:href="#icon-sq"></use>
-                                      </svg>
-                                  </i>祁紫檀 - 我有一把枪
-                                  </p>
-                              </div>
-                              <div class="play">
-                                  <svg>
-                                      <use xlink:href="#icon-play"></use>
-                                  </svg>
-                              </div>
-                          </a>
-                    </li>
+                    <!--JS获取-->
                 </ul>
             </div>
             <div class="footer">
@@ -723,12 +517,14 @@
                         <li><a>周杰伦</a></li>
                         <li><a>张学友</a></li>
                     </ul>
+                    <ul id="searchResults"></ul>
                 </div>
             </li>
         </ol>
     </div>
 </body>
-<!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+<script src="./vendors/jquery.min.js"></script>
+<script src="./vendors/av-min.js"></script>
 <script src="./home.js"></script>
 
 </html>
