@@ -25,8 +25,12 @@ body{
     transform:scale(.5);
     transform-origin:0 0;
 }
-
-
+input[type=search] {
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+}
 
 /*top-bar*/
 .top-control-wrapper{
@@ -458,8 +462,8 @@ body{
     line-height:26px;
     flex-grow:1;
     /*除去默认的outline*/
-    outline:none;
-    border:none;
+    /*outline:none;*/
+    /*border:none;*/
 }
 /*重写占位符的样式*/
 .tabs-content3 .search #output::-webkit-input-placeholder{
