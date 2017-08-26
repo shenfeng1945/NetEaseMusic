@@ -74,15 +74,19 @@ query.find().then(function (results) {
 let $output = $('#output')
 $output.on('input',function(){
     let value = this.value.trim()
-    //把搜索内容删除时，它会打出所有结果，通过以下判断可以删除所有结果
+    //无论输入一个什么结果，让"热门搜索"消失
+    $('.hot-search').addClass('clear')
+    $('.searchAll').removeClass('hidden')
+
+    // 把搜索内容删除时，它会打出所有结果，通过以下判断可以删除所有结果
     if(value === ''){
-        $('#searchResults').addClass('hidden')
         return
     }
+    $('.searchAll > h3').html(`搜索“${value}”`)
     var query = new AV.Query('Song');
     query.contains('music',value);
     query.find().then(function(result){
-        $('#searchResults').removeClass('hidden')
+        // $('#searchResults').removeClass('hidden')
         //每次进来之前清空这个没有结果
         $('#searchResults').empty()
         if(result.length === 0){
@@ -94,12 +98,23 @@ $output.on('input',function(){
                 let {music} = content
                 let id = result[i].id
                 let $li = `
-                  <li data-id=${id}>${music}</li>
+                 <li class="border-bottom" data-id=${id}>
+                                <svg>
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                                <span>${music}</span>
+                            </li>
                `
                 $('#searchResults').append($li)
             }
         }
     })
 })
-
+//当input里的值全部删完后，让"热门搜索"现身
+$output.keyup(function(){
+    if(! this.value){
+        $('.hot-search').removeClass('clear')
+        $('.searchAll').addClass('hidden')
+    }
+})
 

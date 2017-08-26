@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="./reset.css">
-    <script src="//at.alicdn.com/t/font_393027_y3ics43mx05xko6r.js"></script>
+    <script src="//at.alicdn.com/t/font_393027_5t4w8124fbpousor.js"></script>
     <title>网易云音乐</title>
 </head>
 
@@ -24,7 +24,7 @@
          <div class="download">下载APP</div>
         </section>
         <section class="tabs-control">
-            <ol class="tabs">
+            <ol class="tabs border-bottom">
                 <li class="active">
                     <div><span>推荐音乐</span></div>
                 </li>
@@ -496,7 +496,7 @@
                 </i></div>
             </li>
             <li class="tabs-content3">
-                <div class="search-wrap">
+                <div class="search-wrap border-bottom">
                     <div class="search">
                         <i></i>
                         <input type="search" id="output" placeholder="搜索歌曲、歌手、专辑" autocomplete="off">
@@ -517,7 +517,11 @@
                         <li><a>周杰伦</a></li>
                         <li><a>张学友</a></li>
                     </ul>
-                    <ul id="searchResults"></ul>
+                </div>
+                <div class="searchAll">
+                     <h3 class="border-bottom"></h3>
+                     <ul id="searchResults">
+                     </ul>
                 </div>
             </li>
         </ol>
@@ -526,5 +530,4 @@
 <script src="./vendors/jquery.min.js"></script>
 <script src="./vendors/av-min.js"></script>
 <script src="./home.js"></script>
-
 </html>

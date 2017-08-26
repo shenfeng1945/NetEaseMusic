@@ -12,9 +12,19 @@ body{
     line-height:1;
     padding-left:7px;
     border-left:2px solid #D33A31;
-    margin:21px 0 16px;
+    margin-bottom:16px;
 }
-
+.border-bottom::after{
+    content:'';
+    display: block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:200%;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    transform:scale(.5);
+    transform-origin:0 0;
+}
 
 
 
@@ -79,17 +89,17 @@ body{
     display: flex;
     text-align:center;
 }
-.tabs-control ol::after{
-    content:'';
-    display: block;
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:200%;
-    border-bottom:1px solid rgba(0,0,0,.2);
-    transform: scale(.5);
-    transform-origin: 0 0;
-}
+/*.tabs-control ol::after{*/
+    /*content:'';*/
+    /*display: block;*/
+    /*position:absolute;*/
+    /*left:0;*/
+    /*bottom:0;*/
+    /*width:200%;*/
+    /*border-bottom:1px solid rgba(0,0,0,.2);*/
+    /*transform: scale(.5);*/
+    /*transform-origin: 0 0;*/
+/*}*/
 .tabs-control ol li{
     width:33.33333%;
     line-height:35px;
@@ -117,7 +127,9 @@ body{
     display: block;
 }
 /*推荐歌单*/
-
+.recommend-list{
+    padding-top: 21px;
+}
 .recommend-list > ol.lists{
     display: flex;
     flex-wrap:wrap;
@@ -284,17 +296,7 @@ body{
     padding-bottom:16px;
     /*position:relative;*/
 }
-/*.tabs-content2 .hot-banner::after{*/
-    /*content:'';*/
-    /*display: block;*/
-    /*position:absolute;*/
-    /*left:0;*/
-    /*top:0;*/
-    /*width:100%;*/
-    /*height:100%;*/
-    /*background: rgba(202,202,203,.2);*/
-    /*z-index:0;*/
-/*}*/
+
 .tabs-content2 .hot-banner .hot-notice{
    background: url('https://i.loli.net/2017/08/22/599c513e4c3f0.png') no-repeat -24px -30px;
     width:142px;
@@ -432,17 +434,6 @@ body{
     padding:15px 10px;
     position:relative;
 }
-.tabs-content3 .search-wrap::after{
-    content:'';
-    display: block;;
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:200%;
-    transform:scale(.5);
-    transform-origin:0 0;
-    border-bottom:1px solid rgba(0,0,0,.1);
-}
 .tabs-content3 .search{
     display: flex;
     justify-content:center;
@@ -460,7 +451,7 @@ body{
 }
 .tabs-content3 .search #output{
     /*除去默认的border*/
-    border: 1px solid #ebebeb;
+    /*border: 1px solid #ebebeb;*/
     font-size:14px;
     background:#EBECEC;
     color:#333;
@@ -468,6 +459,7 @@ body{
     flex-grow:1;
     /*除去默认的outline*/
     outline:none;
+    border:none;
 }
 /*重写占位符的样式*/
 .tabs-content3 .search #output::-webkit-input-placeholder{
@@ -483,8 +475,12 @@ body{
 }
 .tabs-content3 .hot-search{
     padding:12px 10px 0;
+    display: block;
 }
-.tabs-content3 .hot-search h3{
+.tabs-content3 .hot-search.clear{
+    display: none;
+}
+.tabs-content3 .hot-search > h3{
     font-size:12px;
     margin-bottom:9px;
 }
@@ -513,10 +509,33 @@ body{
     transform:scale(.5);
     transform-origin:0 0;
 }
+.tabs-content3 .searchAll h3{
+    position:relative;
+   font-size:15px;
+    color:#507DAF;
+    line-height: 50px;
+}
+
 .tabs-content3 .hot-search #searchResults.hidden{
     display:none;
 }
 .tabs-content3 .hot-search #searchResults{
     display: block;
-    
+}
+.tabs-content3 .searchAll{
+    display: block;
+    padding-left:10px;
+}
+.tabs-content3 .searchAll.hidden{
+    display: none;
+}
+.tabs-content3  #searchResults li{
+    position: relative;
+    line-height:45px;
+}
+.tabs-content3 #searchResults li svg{
+    width:18px;
+    height:18px;
+    fill:#B1B1B1;
+    vertical-align:middle;
 }
