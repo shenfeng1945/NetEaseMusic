@@ -1,6 +1,7 @@
-//home主页的10个最新音乐列表
-//leancloud
-var APP_ID = '82InV9gcyTzIw099BrTuO1wd-gzGzoHsz';
+/**
+ * Created by lzc on 2017/8/26.
+ */
+ar APP_ID = '82InV9gcyTzIw099BrTuO1wd-gzGzoHsz';
 var APP_KEY = 'qCBb2prMElwslrBNaryawyER';
 
 AV.init({
@@ -11,7 +12,7 @@ AV.init({
 
 //这是单个的保存到leancloud
 //选择数据库
-var SongObject = AV.Object.extend('Song');
+var SongObject = AV.Object.extend('Search');
 //在数据库里生成新的记录
 var songObject1 = new SongObject();
 var songObject2 = new SongObject();
