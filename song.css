@@ -15,6 +15,11 @@ body{
     left: 50%;
     transform:translate(-50%,-50%);
 }
+.othercenter{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
 /*.page::after{*/
     /*content:'';*/
     /*display: block;*/
