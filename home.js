@@ -73,12 +73,18 @@ query.find().then(function (results) {
 //搜索框
 let $output = $('#output')
 $output.on('input',function(){
+    //当内容删完后，让热门搜索现身，并删掉搜索结果
+    if(this.value === ''){
+        $('.hot-search').removeClass('clear')
+        $('.searchAll > h3').empty()
+        $('.searchAll  li').empty()
+        $('#searchResults').html(null)
+        return
+    }
     let value = this.value.trim()
     //无论输入一个什么结果，让"热门搜索"消失
     $('.hot-search').addClass('clear')
-    $('.searchAll').removeClass('hidden')
-
-    // 把搜索内容删除时，它会打出所有结果，通过以下判断可以删除所有结果
+    // 把搜索内容为空格时，它会打出所有结果，通过以下判断可以删除所有结果
     if(value === ''){
         return
     }
@@ -109,12 +115,5 @@ $output.on('input',function(){
             }
         }
     })
-})
-//当input里的值全部删完后，让"热门搜索"现身
-$output.keyup(function(){
-    if(! this.value){
-        $('.hot-search').removeClass('clear')
-        $('.searchAll').addClass('hidden')
-    }
 })
 
