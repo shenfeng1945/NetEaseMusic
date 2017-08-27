@@ -1,0 +1,153 @@
+body{
+    font-family: Helvetica, sans-serif;
+    background:#FBFCFD;
+}
+.page{
+    /*position:relative;*/
+}
+.ellipsis{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+/*art-head*/
+.art-head{
+    position:relative;
+    padding-bottom:67.8%;
+    overflow:hidden;
+    z-index:1;
+}
+.art-head img{
+    position:absolute;
+    left:0;
+    top:0;
+    max-width:100%;
+    z-index:-1;
+}
+.art-head .name{
+    position:absolute;
+    bottom:7px;
+    font-size:17px;
+    color:white;
+    left:15px;
+
+}
+
+/*summary*/
+.summary{
+    padding:10px 15px 0;
+    position:relative;
+}
+.summary p{
+    font-size:14px;
+    color:#666;
+}
+.summary svg.icon{
+    position:absolute;
+    right:5%;
+    bottom:-15px;
+    width:15px;
+    height:15px;
+    fill:#BFBFC0;
+}
+.summary svg.down{
+    display: none;
+}
+.summary svg.down.active{
+    display: inline-block;
+}
+.summary svg.up{
+    display: none;
+}
+.summary svg.up.active{
+    display: inline-block;
+}
+/*hot-songs*/
+.hot-songs{
+    margin-top:18px;
+    margin-bottom:66px;
+}
+.hot-songs > h3{
+    font-size:12px;
+    background:#EEEFF0;
+    padding:0 10px;
+    color:#666;
+    line-height:23px;
+}
+.hot-songs > ul{}
+.hot-songs > ul li{}
+.hot-songs > ul li a{
+    display:flex;
+    align-items:center;
+}
+.hot-songs a .number{
+    line-height:55px;
+    width:40px;
+    font-size:17px;
+    color:#999;
+    text-align:center;
+}
+.hot-songs a .list-play-wrap{
+    display: flex;
+    flex-grow:1;
+    align-items:center;
+    position:relative;
+    padding:8px 0;
+}
+.hot-songs a .list-play-wrap::after{
+    content:'';
+    display: block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:200%;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    transform:scale(.5);
+    transform-origin:0 0;
+}
+.hot-songs a .list-item{
+    flex-grow:1;
+}
+.hot-songs a .list-item h3{
+    font-size:17px;
+    color:#333;
+}
+.hot-songs a .list-item p{
+    font-size:12px;
+    color:#888;
+}
+.hot-songs a .play{
+    padding:0 10px;
+}
+.hot-songs a .play > svg{
+    width:22px;
+    height:22px;
+    vertical-align:middle;
+}
+/*bottom-bar*/
+.bottom-bar{
+    padding:7px 0;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    left:9%;
+    max-width:100%;
+
+}
+.bottom-bar .download1{
+    color:white;
+    background:#D43B32;
+    display: inline-block;
+    line-height:30px;
+    padding:5px 70px;
+    border-radius: 40px;
+
+}
+.bottom-bar .download1 svg{
+    display: inline-block;
+    width:23px;
+    height:23px;
+    vertical-align: middle;
+}
+
