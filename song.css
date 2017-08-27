@@ -143,23 +143,30 @@ body{
 }
 
 .links{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    position:absolute;
+    left:50%;
+    bottom:20px;
+    transform:translateX(-50%);
+    width:100%;
+}
+.links > .wrapper{
     display: flex;
     justify-content: center;
-    position:relative;
-    margin-top:75px;
 }
 .links .open{
     color:#d43b32;
     font-size:15px;
     border:1px solid #d43b32;
-    padding:7px 42.5px;
+    padding:7px 42px;
     border-radius:4px;
 }
 .links .download{
     font-size:15px;
    background:#d43b32;
     color:white;
-    padding:7px 42.5px;
+    padding:7px 42px;
     border-radius:4px;
     margin-left:12px;
 }
