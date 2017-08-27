@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5389bf7b-b4a4-401d-9584-406a4b07b1ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.css" afterPath="$PROJECT_DIR$/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/song.css" afterPath="$PROJECT_DIR$/song.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/song.js" afterPath="$PROJECT_DIR$/song.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,18 +24,28 @@
       <file leaf-file-name="song.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/song.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="270">
+              <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="song.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="song.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/song.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="168" column="18" lean-forward="false" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
+            <state relative-caret-position="-87">
+              <caret line="134" column="36" lean-forward="false" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="song.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/song.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="80" column="2" lean-forward="false" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -62,7 +71,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/testDataRepertory/newMusic.js" />
         <option value="$PROJECT_DIR$/home.js" />
-        <option value="$PROJECT_DIR$/song.js" />
         <option value="$PROJECT_DIR$/testDataRepertory/searchData.js" />
         <option value="$PROJECT_DIR$/special.css" />
         <option value="$PROJECT_DIR$/special.html" />
@@ -70,6 +78,7 @@
         <option value="$PROJECT_DIR$/home.css" />
         <option value="$PROJECT_DIR$/song.html" />
         <option value="$PROJECT_DIR$/song.css" />
+        <option value="$PROJECT_DIR$/song.js" />
       </list>
     </option>
   </component>
@@ -85,8 +94,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="444" />
-    <option name="y" value="17" />
+    <option name="x" value="466" />
+    <option name="y" value="2" />
     <option name="width" value="887" />
     <option name="height" value="704" />
   </component>
@@ -209,15 +218,15 @@
       <workItem from="1503703643705" duration="15000" />
       <workItem from="1503703905001" duration="1877000" />
       <workItem from="1503731545916" duration="24639000" />
-      <workItem from="1503794483196" duration="17718000" />
+      <workItem from="1503794483196" duration="24891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80657000" />
+    <option name="totallyTimeSpent" value="87830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="444" y="17" width="887" height="704" extended-state="0" />
+    <frame x="466" y="2" width="887" height="704" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37657866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -265,7 +274,7 @@
         <state relative-caret-position="3417">
           <caret line="201" column="4" lean-forward="false" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="4" />
           <folding>
-            <element signature="e#9000#9533#2" expanded="true" />
+            <element signature="e#9000#9533#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -291,7 +300,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#9000#9533#2" expanded="true" />
+            <element signature="e#9000#9533#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -301,7 +310,7 @@
         <state relative-caret-position="8823">
           <caret line="519" column="18" lean-forward="false" selection-start-line="519" selection-start-column="13" selection-end-line="519" selection-end-column="18" />
           <folding>
-            <element signature="e#9000#9533#2" expanded="true" />
+            <element signature="e#9000#9533#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -326,7 +335,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#9000#9533#2" expanded="true" />
+            <element signature="e#9000#9533#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -357,7 +366,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#9000#9533#2" expanded="true" />
+            <element signature="e#9000#9533#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -415,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/song.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testDataRepertory/searchData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8959">
@@ -455,7 +457,7 @@
         <state relative-caret-position="332">
           <caret line="418" column="20" lean-forward="true" selection-start-line="418" selection-start-column="20" selection-end-line="418" selection-end-column="20" />
           <folding>
-            <element signature="e#9000#9533#2" expanded="true" />
+            <element signature="e#9000#9533#2" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -472,16 +474,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/song.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        <state relative-caret-position="270">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/song.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="168" column="18" lean-forward="false" selection-start-line="168" selection-start-column="18" selection-end-line="168" selection-end-column="18" />
+        <state relative-caret-position="-87">
+          <caret line="134" column="36" lean-forward="false" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/song.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="80" column="2" lean-forward="false" selection-start-line="80" selection-start-column="2" selection-end-line="80" selection-end-column="2" />
           <folding />
         </state>
       </provider>
