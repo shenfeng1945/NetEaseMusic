@@ -391,21 +391,21 @@ var song52 = {
     'url':''
 }
 var song53 = {
-    'music': '',
-    'singer': '',
-    'special':'又见炊烟',
+    'music': '英雄谁属',
+    'singer': '卞留念',
+    'special':'《太极宗师》主题曲',
     'url':''
 }
 var song54 = {
-    'music': '',
-    'singer': '',
-    'special':'',
+    'music': '枉凝眉',
+    'singer': '陈力',
+    'special':'《红楼梦》',
     'url':''
 }
 var song55 = {
-    'music': '',
-    'singer': '',
-    'special':'',
+    'music': '难念的经',
+    'singer': '周华健',
+    'special':'《天龙八部》主题曲',
     'url':''
 }
 //英文歌
@@ -445,28 +445,28 @@ var song61 = {
     'special':'Something Just Like This',
     'url':''
 }
-var song55 = {
-    'music': '千言万语',
-    'singer': '邓丽君',
-    'special':'邓丽君15周年',
+var song62 = {
+    'music': 'We Are One(Ole Ola)',
+    'singer': 'Pitbull',
+    'special':'We Are One',
     'url':''
 }
 var song55 = {
-    'music': '千言万语',
-    'singer': '邓丽君',
-    'special':'邓丽君15周年',
+    'music': 'Uptown Funk',
+    'singer': 'Bruno Mars',
+    'special':'Uptown Funk',
     'url':''
 }
 var song55 = {
-    'music': '千言万语',
-    'singer': '邓丽君',
-    'special':'邓丽君15周年',
+    'music': '紅蓮の弓矢',
+    'singer': 'Sound Horizon',
+    'special':'進撃の軌跡',
     'url':''
 }
 var song55 = {
-    'music': '千言万语',
-    'singer': '邓丽君',
-    'special':'邓丽君15周年',
+    'music': 'Dream It Possible',
+    'singer': 'Delacey',
+    'special':'Dream It Possible',
     'url':''
 }
 songObject1.set(song1)
@@ -528,7 +528,6 @@ var songs = [songObject1,songObject2,songObject3,songObject4,songObject5,songObj
              songObject11,songObject12,songObject13,songObject14,songObject16,songObject17,songObject18,songObject19,songObject20,songObject21,songObject22,
     songObject23,songObject24,songObject25,songObject26,songObject27,songObject28,songObject29,songObject30,songObject31,songObject32,songObject33,
     songObject34,songObject35,songObject36,songObject37,songObject38,songObject39,songObject40,songObject41,songObject42,songObject43,songObject44,
-    songObject45,songObject46,songObject47,songObject48,songObject49,songObject50,songObject51,songObject52,songObject53,songObject54,songObject55,songObject15
-    ,songObject15,songObject15,songObject15,songObject15,songObject15]
+    songObject45,songObject46,songObject47,songObject48,songObject49,songObject50,songObject51,songObject52,songObject53,songObject54,songObject55]
 
 AV.Object.saveAll(songs)
