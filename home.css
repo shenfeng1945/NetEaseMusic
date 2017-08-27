@@ -319,7 +319,7 @@ input[type=search] {
 .tabs-content2 .hot-lists{
     background:#fcfcfd;
 }
-.tabs-content2 .hot-lists li{
+.tabs-content2 .hot-lists li a{
     display: flex;
     justify-content:space-between;
     padding-left:10px;
@@ -327,9 +327,10 @@ input[type=search] {
 }
 .tabs-content2 .hot-lists li .item-play-wrap{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     position:relative;
+    flex-grow:1;
 }
 .tabs-content2 .hot-lists li .item-play-wrap::after{
    content:'';
@@ -413,6 +414,9 @@ input[type=search] {
     font-size:14px;
     text-align: center;
     background:#fcfcfd;
+}
+.tabs-content2 .whole-list > a{
+    display: block;
 }
 .tabs-content2 .whole-list span{
     display: inline-block;
