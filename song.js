@@ -3,7 +3,7 @@
  */
 
 let audio = document.createElement('audio')
-audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
+// audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
 audio.oncanplay = function () {
     audio.play()
 }
@@ -37,8 +37,38 @@ $('.icon-play').on('click', function () {
 //     })
 // })
 $(function(){
+    let url = window.location.href
+    let reg = /.*\=(.*)/
+    let id = url.match(reg)[1]
     $.get('./song.json').then(function(object){
-        let {lyric} = object
+        for(var i=0;i<object.length;i++){
+            if(object[i]['id'] === id){
+                getMusic({
+                    name: object[i]['name'],
+                    lyric: object[i]['lyric'],
+                    singer: object[i]['singer'],
+                    song: object[i]['song'],
+                    img: object[i]['img'],
+                    background: object[i]['background']
+                })
+            }
+        }
+    })
+    function getMusic(options){
+        let {name,lyric,singer,song,img,background} = options
+        let image = document.querySelector('.center-image')
+        image.src = img
+        let $page = $('.page')
+        $page.css('background-image',`url(${background})`)
+        let h1 = `
+             <h1 class="lyric-head">${name} <span>- ${singer}</span></h1>
+           `
+        $('.lyrics').prepend(h1)
+        $('head title').text(`${name}-${singer}-在线试听-网易云音乐`)
+        // $('.lyric-head').text(name),这样不行，会覆盖h1下的标签。
+        // console.log(singer)
+        // $('.singer').text(singer)
+        audio.src = song
         let array = lyric.split('\n')
         let reg = /\[(.*)\](.+)/
         let arr = []
@@ -54,15 +84,23 @@ $(function(){
                    <p data-time="${array[i][1]}">${array[i][2]}</p>
                      `
                 $lyric.append($p)
-            }
-        }
-    })
+      }
+
+}
+     }
+
 })
+
+
+
+
+
 setInterval(function(){
      let time = audio.currentTime
      let minute = ~~(time/60)
      let newminute = (minute>9)?minute:'0'+minute
      let second = time - minute*60
+    //为什么second>9不行？
      let newSecond = (second > 10)?second:`0`+second
     // console.log(newSecond)
      let newTime = `${newminute}:${newSecond}`
@@ -70,7 +108,10 @@ setInterval(function(){
     $.each($p,function(item){
         let pTime = $p.eq(item).attr('data-time')
         let pNextTime = $p.eq(item+1).attr('data-time')
-        // console.log(pTime,pNextTime)
+        //有的歌第一句起始时间较大，在未到这个时间时，它不会变色
+        if(newTime < pTime && item === 0){
+            $p.eq(0).css('color','white')
+        }
         if(newTime >= pTime && newTime < pNextTime){
             let movingPx = `-${(item-1)*24}px`
             $('.lyric-moving').css('transform',`translateY(${movingPx})`)
