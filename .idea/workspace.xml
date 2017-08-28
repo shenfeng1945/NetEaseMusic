@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5389bf7b-b4a4-401d-9584-406a4b07b1ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testDataRepertory/lyricImage.js" afterPath="$PROJECT_DIR$/testDataRepertory/lyricImage.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +33,8 @@
       <file leaf-file-name="lyricImage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testDataRepertory/lyricImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12427">
-              <caret line="733" column="101" lean-forward="false" selection-start-line="733" selection-start-column="101" selection-end-line="733" selection-end-column="101" />
+            <state relative-caret-position="362">
+              <caret line="736" column="24" lean-forward="true" selection-start-line="736" selection-start-column="24" selection-end-line="736" selection-end-column="24" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -87,8 +86,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="180" />
-    <option name="y" value="107" />
+    <option name="x" value="170" />
+    <option name="y" value="119" />
     <option name="width" value="947" />
     <option name="height" value="532" />
   </component>
@@ -226,15 +225,15 @@
       <workItem from="1503703905001" duration="1877000" />
       <workItem from="1503731545916" duration="24639000" />
       <workItem from="1503794483196" duration="28892000" />
-      <workItem from="1503885185512" duration="14594000" />
+      <workItem from="1503885185512" duration="14774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106425000" />
+    <option name="totallyTimeSpent" value="106605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="180" y="107" width="947" height="532" extended-state="0" />
+    <frame x="170" y="119" width="947" height="532" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2962963" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -491,8 +490,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testDataRepertory/lyricImage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12427">
-          <caret line="733" column="101" lean-forward="false" selection-start-line="733" selection-start-column="101" selection-end-line="733" selection-end-column="101" />
+        <state relative-caret-position="362">
+          <caret line="736" column="24" lean-forward="true" selection-start-line="736" selection-start-column="24" selection-end-line="736" selection-end-column="24" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
