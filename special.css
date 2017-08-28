@@ -3,7 +3,7 @@ body{
     background:#FBFCFD;
 }
 .page{
-    /*position:relative;*/
+    position:relative;
 }
 .ellipsis{
     display: -webkit-box;
@@ -29,7 +29,7 @@ body{
     position:absolute;
     bottom:7px;
     font-size:17px;
-    color:white;
+    color:blue;
     left:15px;
 
 }
@@ -128,12 +128,17 @@ body{
 /*bottom-bar*/
 .bottom-bar{
     padding:7px 0;
-    text-align:center;
+    /*text-align:center;*/
     position:fixed;
+    left:0;
     bottom:0;
-    left:9%;
+    right:0;
     max-width:100%;
+    background:white;
 
+}
+.bottom-bar .download-wrap{
+    text-align:center;
 }
 .bottom-bar .download1{
     color:white;

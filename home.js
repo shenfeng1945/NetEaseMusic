@@ -21,14 +21,14 @@ query.find().then(function (results) {
     $('.new-music > .loading').css('display','none')
     for(let i=0;i<results.length;i++){
         let content = results[i].attributes
-        let {music,singer,hasSq,origin} = content
+        let {music,singer,hasSq,origin,id} = content
         //判断h2里span有没有内容
        if(! origin){origin = ''}
        //判断有没有没svg图标
        if(hasSq === 'true'){
             let $li = `
              <li>
-                 <a href="./song.html">
+                 <a href="./song.html?id=${id}">
                     <div class="music-item">
                        <h2>${music}<span>${origin}</span></h2>
                        <p>
@@ -50,7 +50,7 @@ query.find().then(function (results) {
    }else if(hasSq === 'false'){
        let $li = `
              <li>
-                 <a href="./song.html">
+                 <a href="./song.html?id=${id}">
                     <div class="music-item">
                        <h2>${music}<span>${origin}</span></h2>
                        <p>
