@@ -541,6 +541,9 @@ input[type=search] {
     position: relative;
     line-height:45px;
 }
+.tabs-content3  #searchResults li > a{
+    display: block; 
+}
 .tabs-content3 #searchResults li svg{
     width:18px;
     height:18px;
