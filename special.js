@@ -60,6 +60,7 @@ query.find().then(function (results) {
         $img.src = head
         $('.art-head > .name').text(fullname)
         $('.summary > p').text(summary)
+        $('head title').text(`${fullname}- 网易云音乐`)
     }
 
 
