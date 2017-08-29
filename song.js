@@ -1,7 +1,10 @@
 /**
  * Created by lzc on 2017/8/23.
  */
-
+var query = new AV.Query('Song');
+query.find().then(function(results){
+   console.log(results)
+})
 let audio = document.createElement('audio')
 // audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
 audio.oncanplay = function () {

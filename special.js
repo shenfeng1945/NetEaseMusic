@@ -1,10 +1,3 @@
-var APP_ID = '82InV9gcyTzIw099BrTuO1wd-gzGzoHsz';
-var APP_KEY = 'qCBb2prMElwslrBNaryawyER';
-
-AV.init({
-    appId: APP_ID,
-    appKey: APP_KEY
-});
 var query = new AV.Query('Song');
 let url = window.location.href
 let reg = /.*\=(.*)/

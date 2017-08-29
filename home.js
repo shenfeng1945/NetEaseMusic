@@ -9,13 +9,6 @@ $('ol.tabs').on('click','li',function(){
     $('ol.tabsContent > li').eq(index).addClass('active').siblings('.active').removeClass('active')
 })
 
-var APP_ID = '82InV9gcyTzIw099BrTuO1wd-gzGzoHsz';
-var APP_KEY = 'qCBb2prMElwslrBNaryawyER';
-
-AV.init({
-    appId: APP_ID,
-    appKey: APP_KEY
-});
 var query = new AV.Query('Song');
 query.find().then(function (results) {
     let count = 0
