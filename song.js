@@ -2,21 +2,18 @@
  * Created by lzc on 2017/8/23.
  */
 var query = new AV.Query('Song');
-query.find().then(function(results){
-   console.log(results)
-})
 let audio = document.createElement('audio')
 // audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
 audio.oncanplay = function () {
-    audio.play()
+    audio.pause()
 }
 $('.icon-pause').on('click', function () {
     audio.pause()
-    $('.disc-container').removeClass('playing')
+    $('.disc-container').addClass('pause')
 })
 $('.icon-play').on('click', function () {
     audio.play()
-    $('.disc-container').addClass('playing')
+    $('.disc-container').removeClass('pause')
 })
 
 // $(function () {
@@ -43,16 +40,17 @@ $(function(){
     let url = window.location.href
     let reg = /.*\=(.*)/
     let id = url.match(reg)[1]
-    $.get('./song.json').then(function(object){
+    query.find().then(function(object){
         for(var i=0;i<object.length;i++){
+            let array = object[i].attributes
             if(object[i]['id'] === id){
                 getMusic({
-                    name: object[i]['name'],
-                    lyric: object[i]['lyric'],
-                    singer: object[i]['singer'],
-                    song: object[i]['song'],
-                    img: object[i]['img'],
-                    background: object[i]['background']
+                    name: array['name'],
+                    lyric: array['lyric'],
+                    singer: array['singer'],
+                    song: array['song'],
+                    img: array['img'],
+                    background: array['background']
                 })
             }
         }
