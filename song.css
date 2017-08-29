@@ -149,6 +149,9 @@ body{
     color:rgba(255,255,255,.6);
     line-height:19px;
     padding-bottom:5px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 .lyrics .lyric-content p.lyric-now{
     color:white;
