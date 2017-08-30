@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5389bf7b-b4a4-401d-9584-406a4b07b1ff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/song.css" afterPath="$PROJECT_DIR$/song.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -103,8 +104,8 @@
       <file leaf-file-name="song.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/song.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="201" column="4" lean-forward="false" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="4" />
+            <state relative-caret-position="200">
+              <caret line="169" column="23" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -340,15 +341,15 @@
       <workItem from="1503885185512" duration="40482000" />
       <workItem from="1503983209921" duration="33696000" />
       <workItem from="1504050421264" duration="1874000" />
-      <workItem from="1504059882502" duration="14534000" />
+      <workItem from="1504059882502" duration="15166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182417000" />
+    <option name="totallyTimeSpent" value="183049000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="365" y="88" width="907" height="613" extended-state="1" />
+    <frame x="365" y="88" width="907" height="613" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40965208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -736,14 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/song.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -782,6 +775,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/song.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/song.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -792,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/song.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="201" column="4" lean-forward="false" selection-start-line="201" selection-start-column="4" selection-end-line="201" selection-end-column="4" />
+        <state relative-caret-position="200">
+          <caret line="169" column="23" lean-forward="false" selection-start-line="169" selection-start-column="23" selection-end-line="169" selection-end-column="23" />
           <folding />
         </state>
       </provider>
