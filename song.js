@@ -2,17 +2,19 @@
  * Created by lzc on 2017/8/23.
  */
 var query = new AV.Query('Song');
-let audio = document.createElement('audio')
-// audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
-audio.oncanplay = function () {
-    audio.pause()
+let video = document.createElement('video')
+//设置为循环播放
+// video.loop = true
+// video.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
+video.oncanplay = function () {
+    video.pause()
 }
 $('.icon-pause').on('click', function () {
-    audio.pause()
+    video.pause()
     $('.disc-container').addClass('pause')
 })
 $('.icon-play').on('click', function () {
-    audio.play()
+    video.play()
     $('.disc-container').removeClass('pause')
 })
 
@@ -69,7 +71,7 @@ $(function(){
         // $('.lyric-head').text(name),这样不行，会覆盖h1下的标签。
         // console.log(singer)
         // $('.singer').text(singer)
-        audio.src = song
+        video.src = song
         let array = lyric.split('\n')
         let reg = /\[(.*)\](.+)/
         let arr = []
@@ -92,12 +94,8 @@ $(function(){
 
 })
 
-
-
-
-
 setInterval(function(){
-     let time = audio.currentTime
+     let time = video.currentTime
      let minute = ~~(time/60)
      let newminute = (minute>9)?minute:'0'+minute
      let second = time - minute*60
@@ -106,6 +104,7 @@ setInterval(function(){
     // console.log(newSecond)
      let newTime = `${newminute}:${newSecond}`
      let $p = $('.lyric-moving>p')
+    // console.log(time)
     $.each($p,function(item){
         let pTime = $p.eq(item).attr('data-time')
         let pNextTime = $p.eq(item+1).attr('data-time')
@@ -118,6 +117,17 @@ setInterval(function(){
             $('.lyric-moving').css('transform',`translateY(${movingPx})`)
             $p.eq(item).css('color','white')
             $p.eq(item-1).css('color','rgba(255,255,255,.6)')
+        }else if($p.length -1 === item && newTime >=pTime){
+            $p.eq(item).css('color','white')
+            $p.eq(item-1).css('color','rgba(255,255,255,.6)')
         }
     })
 },300)
+//播放结束后一切还原,但旋转的图片没还原只是暂停
+video.addEventListener('ended',function(){
+    $('.lyric-moving').css('transform','translateY(0px)')
+    //经测试要自动点‘暂停-播放-暂停'，用户再点“播放”时，才会有歌曲重新播放
+    $('.icon-pause').click()
+    $('.icon-play').click()
+    $('.icon-pause').click()
+})
