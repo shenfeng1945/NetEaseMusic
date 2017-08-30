@@ -1,5 +1,5 @@
 body{
-    font-size:15px;
+    font-size:4.6875vw;
     font-family: Helvetica, sans-serif;
     color:#333;
 }
@@ -7,12 +7,12 @@ body{
 }
 /*两个标题公共的部分写在一起*/
 .sectionTitle{
-    font-size:17px;
+    font-size:5.3125vw;
     color:#333;
     line-height:1;
-    padding-left:7px;
-    border-left:2px solid #D33A31;
-    margin-bottom:16px;
+    padding-left:2.1875vw;
+    border-left:0.625vw solid #D33A31;
+    margin-bottom:5vw;
 }
 .border-bottom::after{
     content:'';
@@ -31,16 +31,20 @@ input[type=search] {
     border-radius: 0;
     outline: 0;
 }
-
+.noCollapse::before{
+    content: '';
+    display: table;
+}
 /*top-bar*/
 .top-control-wrapper{
-    height:104px;
+    height:32.5vw;
 }
 .top-bar{
     background:#D43C33;
     display: flex;
-    padding:18px 10px 16px 10px;
+    padding:4.6875vw 3.125vw;
     justify-content:space-between;
+    align-items:center;
     position: fixed;
     width:100%;
     left:0;
@@ -48,12 +52,12 @@ input[type=search] {
     z-index:3;
 }
 .top-bar > .logo{
-    margin: 2px 0;
+    margin: 0.625vw 0;
 }
 .top-bar > .logo svg{
-    width:142px;
-    height:25px;
-    vertical-align: top;
+    width:44.375vw;
+    height:9.375vw;
+    vertical-align: middle;
 }
 /*.top-bar > a{*/
     /*display: block;*/
@@ -61,9 +65,8 @@ input[type=search] {
 .top-bar > .download{
     color:white;
     position:relative;
-    padding:0 10px;
-    line-height:30px;
-    top:-1px;
+    padding:0 3.125vw;
+    line-height:9.375vw;
 }
 .top-bar > .download::after{
     content:'';
@@ -74,7 +77,7 @@ input[type=search] {
     width:200%;
     height:200%;
     border:1px solid white;
-    border-radius:30px;
+    border-radius:9.375vw;
     transform:scale(0.5);
     transform-origin:0 0;
 }
@@ -84,7 +87,7 @@ input[type=search] {
     position: fixed;
     left:0;
     width:100%;
-    top:64px;
+    top:20vw;
     background:white;
     z-index:3;
 }
@@ -106,15 +109,15 @@ input[type=search] {
 /*}*/
 .tabs-control ol li{
     width:33.33333%;
-    line-height:35px;
+    line-height:10.9375vw;
     color:#333;
-    padding:2.5px 0 0;
+    padding:0.78125vw 0 0;
 }
 .tabs-control ol li.active{
    color:#d33a31;
 }
 .tabs-control ol li div{
-    padding:0 5px;
+    padding:0 1.5625vw;
     display: inline-block;
     /*line-height: 38px;*/
 }
@@ -132,7 +135,7 @@ input[type=search] {
 }
 /*推荐歌单*/
 .recommend-list{
-    padding-top: 21px;
+    padding-top: 6.5625vw;
 }
 .recommend-list > ol.lists{
     display: flex;
@@ -142,13 +145,13 @@ input[type=search] {
 }
 .recommend-list > ol.lists li{
     /* min-width:calc(33.3333% - 2px); */
-    margin-bottom:16px;
+    margin-bottom: 5vw;
     position:relative;
     width:32.8%;
 }
 .recommend-list > ol.lists li img{
-    width:104.5px;
-    height:104.5px;
+    width: 32.65625vw;
+    height:32.65625vw;
     vertical-align:middle;
 
 }
@@ -157,37 +160,37 @@ input[type=search] {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    font-size:13px;
-    padding:6px 2px 0 6px;
+    font-size: 4.0625vw;
+    padding:1.875vw 0.625vw 0 1.875vw;
     line-height:1.2;
 }
 .recommend-list > ol.lists li span{
     position:absolute;
-    right:5px;
-    top:2px;
+    right: 1.5625vw;
+    top: 0.625vw;
     color:white;
-    font-size:12px;
+    font-size:3.75vw;
 }
 .recommend-list > ol.lists li span i{
 }
 .recommend-list > ol.lists li span i svg{
-   width:11px;
-    height:10px;
+   width:3.4375vw;
+    height: 3.125vw;
 }
 /*最新音乐*/
 .new-music{
-    margin-top:24px;
+    margin-top: 7.5vw;
 }
 .new-music .loading{
     text-align:center;
 }
 .new-music .loading img{
-    width:20px;
+    width: 6.25vw;
     height:auto;
 }
 .new-music ul.new-lists{}
 .new-music ul.new-lists li{
-    padding-left:10px;
+    padding-left: 3.125vw;
 }
 .new-music ul.new-lists li a{
     display: flex;
@@ -195,7 +198,7 @@ input[type=search] {
     position:relative;
 }
 .new-music ul.new-lists li .music-item{
-   padding:6px 0;
+   padding:1.875vw 0;
 }
 .new-music ul.new-lists a::after{
     content:'';
@@ -211,33 +214,33 @@ input[type=search] {
 }
 
 .new-music ul.new-lists li .music-item{
-    width:268px;
+    width: 83.75vw;
 }
 .new-music ul.new-lists li h2{
-    font-size:17px;
+    font-size: 5.3125vw;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    padding:1px 0;
+    padding:0.3125vw 0;
 }
 .new-music ul.new-lists li h2 span{
     color:#888;
-    margin-left:4px;
+    margin-left: 1.25vw;
 }
 .new-music ul.new-lists li p{
-    font-size:12px;
+    font-size: 3.75vw;
     color:#888;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    padding:1px 0;
+    padding:0.3125vw 0;
 }
 .new-music ul.new-lists li p i{
-    width:12px;
-    height:8px;
-    margin-right:-2px;
+    width: 3.75vw;
+    height: 2.5vw;
+    margin-right:-0.625vw;
     vertical-align: middle;
-    margin-left:-3px;
+    margin-left:-0.9375vw;
 }
 .icon-sq{
     width:1em;
@@ -252,9 +255,9 @@ input[type=search] {
     align-items: center;
 }
 .new-music ul.new-lists li .play svg{
-   width:22px;
-    height:22px;
-    margin-right:10px;
+   width:6.875vw;
+    height: 6.875vw;
+    margin-right: 3.125vw;
     vertical-align: middle;
 }
 /*footer*/
@@ -266,19 +269,19 @@ input[type=search] {
     background-size:cover;
 }
 .footer .bottom-logo{
-    margin-top:43px;
-    width:230px;
+    margin-top:13.4375vw;
+    width: 71.875vw;
 }
 .footer .button{
     border:1px solid #d33a31;
     color:#d33a31;
-    font-size:16px;
-    padding:9px 21px;
-    border-radius:20px;
-    margin-top:14px;
+    font-size: 5vw;
+    padding: 2.8125vw 6.5625vw;
+    border-radius: 6.25vw;
+    margin-top: 4.375vw;
 }
 .footer p.copyright{
-    font-size:12px;
+    font-size: 3.75vw;
     transform:scale(.75);
     color:#888;
 }
@@ -293,24 +296,24 @@ input[type=search] {
 
 }
 /*热歌榜*/
-.tabs-content2 .hot-banner{
+.tabs-content2 .hot-banner.noCollapse{
    background: transparent url('http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee') no-repeat center;
-    padding-left:20px;
-    padding-top:.1px;
-    padding-bottom:16px;
+    padding-left: 6.25vw;
+    /*padding-top:.1px;*/
+    padding-bottom: 5vw;
     /*position:relative;*/
 }
 
 .tabs-content2 .hot-banner .hot-notice{
    background: url('https://i.loli.net/2017/08/22/599c513e4c3f0.png') no-repeat -24px -30px;
-    width:142px;
-    height:67px;
+    width: 44.375vw;
+    height: 20.9375vw;
     background-size:166px 97px;
-    margin-top:15px;
+    margin-top: 4.6875vw;
 }
 .tabs-content2 .hot-banner .date{
-   font-size:12px;
-    margin-top:10px;
+   font-size: 3.75vw;
+    margin-top: 3.125vw;
     color: rgba(255,255,255,.8);
     transform:scale(.91);
     transform-origin: 0 0;
@@ -322,7 +325,7 @@ input[type=search] {
 .tabs-content2 .hot-lists li a{
     display: flex;
     justify-content:space-between;
-    padding-left:10px;
+    padding-left: 3.125vw;
     align-items:center;
 }
 .tabs-content2 .hot-lists li .item-play-wrap{
@@ -345,9 +348,9 @@ input[type=search] {
     transform-origin:0 0;
 }
 .tabs-content2 .hot-lists .order{
-    font-size:17px;
-    width:28px;
-    margin-top:1px;
+    font-size: 5.3125vw;
+    width: 8.75vw;
+    margin-top: 0.3125vw;
     color:#999;
 }
 .tabs-content2 .hot-lists li:first-child .order{
@@ -360,15 +363,15 @@ input[type=search] {
     color:#d33a31;
 }
 .tabs-content2 .hot-lists .hot-item{
-    width:240px;
-    padding:5.5px 0;
+    width: 75vw;
+    padding:1.71875vw 0;
 }
 .tabs-content2 .hot-lists .hot-item h2{
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    font-size:17px;
-    padding:1px 0;
+    font-size: 5.3125vw;
+    padding:0.3125vw 0;
     /*line-height:25px;*/
 }
 .tabs-content2 .hot-lists .hot-item h2 span{
@@ -383,11 +386,11 @@ input[type=search] {
     white-space: nowrap;
 }
 .tabs-content2 .hot-lists .hot-item p i{
-    width:12px;
-    height:8px;
-    margin-right:-2px;
+    width: 3.75vw;
+    height: 2.5vw;
+    margin-right:-0.625vw;
     vertical-align: middle;
-    margin-left:-3px;
+    margin-left:-0.9375vw;
     display: none;
 }
 .tabs-content2 .hot-lists .hot-item p i.active{
@@ -398,20 +401,20 @@ input[type=search] {
 }
 .tabs-content2 .hot-lists .hot-item p i.active svg{
     display: inline;
-    width:18px;
-    height:12px;
+    width: 5.625vw;
+    height: 3.75vw;
     vertical-align:bottom;
 }
 .tabs-content2 .hot-lists .hot-play{
-    padding:0 10px;
+    padding:0 3.125vw;
 }
 .tabs-content2 .hot-lists .hot-play svg{
-    width:22px;
-    height:22px;
+    width: 6.875vw;
+    height: 6.875vw;
 }
 .tabs-content2 .whole-list{
     color:#999;
-    font-size:14px;
+    font-size: 4.375vw;
     text-align: center;
     background:#fcfcfd;
 }
@@ -420,12 +423,12 @@ input[type=search] {
 }
 .tabs-content2 .whole-list span{
     display: inline-block;
-   line-height: 55px;
-    padding-right:3px;
+   line-height: 17.1875vw;
+    padding-right: 0.9375vw;
 }
 .tabs-content2 .whole-list i svg{
-   width:7px;
-    height:12px;
+   width: 2.1875vw;
+    height: 3.75vw;
     vertical-align: middle;
 }
 
@@ -439,31 +442,31 @@ input[type=search] {
     display: block;
 }
 .tabs-content3 .search-wrap{
-    padding:15px 10px;
+    padding: 4.6875vw 3.125vw;
     position:relative;
 }
 .tabs-content3 .search{
     display: flex;
     justify-content:center;
     align-items:center;
-    border-radius:30px;
+    border-radius: 9.375vw;
     background:#EBECEC;
 }
 .tabs-content3 .search i{
     display: block;
-    width:13px;
-    height:13px;
+    width: 4.0625vw;
+    height: 4.0625vw;
     background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYzljOWNhIiBkPSJNMjUuMTgxLDIzLjUzNWwtMS40MTQsMS40MTRsLTcuMzE1LTcuMzE0CgkJQzE0LjcwOSwxOS4xMDcsMTIuNDYsMjAsMTAsMjBDNC40NzcsMjAsMCwxNS41MjMsMCwxMEMwLDQuNDc3LDQuNDc3LDAsMTAsMGM1LjUyMywwLDEwLDQuNDc3LDEwLDEwYzAsMi4zNDItMC44MTEsNC40OS0yLjE2LDYuMTk1CgkJTDI1LjE4MSwyMy41MzV6IE0xMCwyYy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4YzQuNDE4LDAsOC0zLjU4Miw4LThTMTQuNDE4LDIsMTAsMnoiLz48L3N2Zz4=');
-    margin:0 8px;
+    margin:0 2.5vw;
     vertical-align:middle;
 }
 .tabs-content3 .search #output{
     /*除去默认的border*/
     /*border: 1px solid #ebebeb;*/
-    font-size:14px;
+    font-size: 4.375vw;
     background:#EBECEC;
     color:#333;
-    line-height:26px;
+    line-height: 8.125vw;
     flex-grow:1;
     /*除去默认的outline*/
     /*outline:none;*/
@@ -478,43 +481,43 @@ input[type=search] {
     /*background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOCAyOCI+PGcgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjYmNiZGJkIiBkPSJNMTQsMGM3LjczMiwwLDE0LDYuMjY4LDE0LDE0YzAsNy43MzItNi4yNjgsMTQtMTQsMTQKCVMwLDIxLjczMiwwLDE0QzAsNi4yNjgsNi4yNjgsMCwxNCwweiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ViZWNlYiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0ibTE5IDlsLTEwIDEwIi8+PHBhdGggZD0ibTkgOWwxMCAxMCIvPjwvZz48L2c+PC9zdmc+');*/
 /*}*/
 .tabs-content3 .search .half-circle{
-    width:30px;
-    height:30px;
+    width: 9.375vw;
+    height: 9.375vw;
 }
 .tabs-content3 .hot-search{
-    padding:12px 10px 0;
+    padding: 3.75vw 3.125vw 0;
     display: block;
 }
 .tabs-content3 .hot-search.clear{
     display: none;
 }
 .tabs-content3 .hot-search > h3{
-    font-size:12px;
-    margin-bottom:9px;
+    font-size: 3.75vw;
+    margin-bottom: 2.8125vw;
 }
 .tabs-content3 .hot-search ul.hot-search-lists{
     display: flex;
     flex-wrap:wrap;
 }
 .tabs-content3 .hot-search ul.hot-search-lists li{
-    font-size:14px;
+    font-size: 4.375vw;
     position:relative;
-    margin-right:8px;
-    margin-bottom:8px;
+    margin-right: 2.5vw;
+    margin-bottom: 2.5vw;
     /*padding: 5px 14px;*/
-    line-height:22px;
+    line-height: 6.875vw;
     border:1px solid rgba(0,0,0,.2);
-    border-radius: 34px;
+    border-radius: 10.625vw;
 }
 .tabs-content3 .hot-search ul.hot-search-lists li >a{
     display: block;
-    padding:5px 14px;
+    padding: 1.5625vw 4.375vw;
 }
 .tabs-content3 .searchAll h3{
     position:relative;
-   font-size:15px;
+   font-size: 4.6875vw;
     color:#507DAF;
-    line-height: 50px;
+    line-height: 15.625vw;
 }
 
 .tabs-content3 .hot-search #searchResults.hidden{
@@ -525,21 +528,21 @@ input[type=search] {
 }
 .tabs-content3 .searchAll{
     display: block;
-    padding-left:10px;
+    padding-left: 3.125vw;
 }
 .tabs-content3 .searchAll.hidden{
     display: none;
 }
 .tabs-content3  #searchResults li{
     position: relative;
-    line-height:45px;
+    line-height: 14.0625vw;
 }
 .tabs-content3  #searchResults li > a{
     display: block; 
 }
 .tabs-content3 #searchResults li svg{
-    width:18px;
-    height:18px;
+    width: 5.625vw;
+    height: 5.625vw;
     fill:#B1B1B1;
     vertical-align:middle;
 }

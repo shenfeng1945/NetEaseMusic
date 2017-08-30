@@ -67,7 +67,7 @@ query.find().then(function (results) {
         //选择热歌榜
         if(hotsong){
             count ++
-            if(count < 10){count= ''+ count}
+            if(count < 10){count= '0'+ count}
             let li = `
                  <li>
                     <a href="./song.html?id=${id}">
