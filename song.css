@@ -191,9 +191,22 @@ body{
 
 @keyframes circling{
     0%{
+        -webkit-transform: rotate(0deg);
         transform: rotateZ(0deg)
     }
     100%{
-        transform: rotateZ(360deg)
+        -webkit-transform: rotate(1turn);
+        transform: rotateZ(1turn)
+    }
+}
+@-webkit-keyframes circling {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
     }
 }
