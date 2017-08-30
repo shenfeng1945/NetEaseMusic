@@ -5,10 +5,6 @@ var query = new AV.Query('Song');
 let audio = document.createElement('audio')
 //让音频内联播放 ios10
 audio.playsinline = true
-// audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
-// audio.oncanplay = function () {
-//     audio.pause()
-// }
 $('.icon-pause').on('click', function () {
     audio.pause()
     $('.disc-container').addClass('pause')
@@ -126,8 +122,5 @@ setInterval(function(){
 //播放结束后一切还原,但旋转的图片没还原只是暂停
 audio.addEventListener('ended',function(){
     $('.lyric-moving').css('transform','translateY(0px)')
-    //经测试要自动点‘暂停-播放-暂停'，用户再点“播放”时，才会有歌曲重新播放
-    $('.icon-pause').click()
-    $('.icon-play').click()
     $('.icon-pause').click()
 })
