@@ -17,7 +17,7 @@ query.find().then(function (results) {
         let id = results[i].id
         // console.log(id)
         let content = results[i].attributes
-        let {name,singer,hasSq,newmusic,special,hotsong} = content
+        let {name,singer,hasSq,newmusic,special,hotsong,hotsearch} = content
         //选择最新音乐
         if(newmusic){
              //判断有没有没svg图标
@@ -92,6 +92,12 @@ query.find().then(function (results) {
                 </li>
 `
        $('ol.hot-lists').append(li)
+        }
+        if(hotsearch){
+            let li = `
+            <li><a href="./song.html?id=${id}">${name}</a>
+`
+            $('.hot-lists').append(li)
         }
     }
 }, function (error) {
