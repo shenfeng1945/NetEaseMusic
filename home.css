@@ -492,11 +492,11 @@ input[type=search] {
     font-size:12px;
     margin-bottom:9px;
 }
-.tabs-content3 .hot-search ul.hot-lists{
+.tabs-content3 .hot-search ul.hot-search-lists{
     display: flex;
     flex-wrap:wrap;
 }
-.tabs-content3 .hot-search ul.hot-lists li{
+.tabs-content3 .hot-search ul.hot-search-lists li{
     font-size:14px;
     position:relative;
     margin-right:8px;
@@ -506,7 +506,7 @@ input[type=search] {
     border:1px solid rgba(0,0,0,.2);
     border-radius: 34px;
 }
-.tabs-content3 .hot-search ul.hot-lists li >a{
+.tabs-content3 .hot-search ul.hot-search-lists li >a{
     display: block;
     padding:5px 14px;
 }

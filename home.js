@@ -70,34 +70,37 @@ query.find().then(function (results) {
             if(count < 10){count= ''+ count}
             let li = `
                  <li>
-                     <a href="./song.html?id=${id}">
-                          <div class="order">${count}</div>
-                          <div class="item-play-wrap">
-                             <div class="hot-item">
-                             <h2>${name}</span></h2>
-                             <p><i class="active">
-                             <svg>
-                                <use xlink:href="#icon-sq"></use>
-                              </svg>
-                              </i>${singer} - ${special}
-                              </p>
+                    <a href="./song.html?id=${id}">
+                        <div class="order">${count}</div>
+                        <div class="item-play-wrap">
+                            <div class="hot-item">
+                               <h2>${name}</h2>
+                               <p>
+                                  <i class="active">
+                                   <svg>
+                                      <use xlink:href="#icon-sq"></use>
+                                   </svg>
+                                   </i>
+                                ${singer} - ${special}
+                                </p>
                             </div>
-                          <div class="hot-play">
-                             <svg>
-                               <use xlink:href="#icon-play"></use>
-                             </svg>
-                         </div>
-                          </div>
-                       </a>
+                            <div class="hot-play">
+                               <svg>
+                                 <use xlink:href="#icon-play"></use>
+                               </svg>
+                            </div>
+                        </div>
+                    </a>
                 </li>
 `
+            // console.log(li)
        $('ol.hot-lists').append(li)
         }
         if(hotsearch){
             let li = `
             <li><a href="./song.html?id=${id}">${name}</a>
 `
-            $('.hot-lists').append(li)
+            $('.hot-search-lists').append(li)
         }
     }
 }, function (error) {
