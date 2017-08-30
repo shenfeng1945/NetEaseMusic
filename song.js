@@ -2,19 +2,19 @@
  * Created by lzc on 2017/8/23.
  */
 var query = new AV.Query('Song');
-let video = document.createElement('video')
+let audio = document.createElement('audio')
 //设置为循环播放
-// video.loop = true
-// video.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
-video.oncanplay = function () {
-    video.pause()
+// audio.loop = true
+// audio.src = "http://ov4sliu3n.bkt.clouddn.com/%E6%88%91%E7%9A%84%E4%B8%80%E4%B8%AA%E9%81%93%E5%A7%91%E6%9C%8B%E5%8F%8B.mp3"
+audio.oncanplay = function () {
+    audio.pause()
 }
 $('.icon-pause').on('click', function () {
-    video.pause()
+    audio.pause()
     $('.disc-container').addClass('pause')
 })
 $('.icon-play').on('click', function () {
-    video.play()
+    audio.play()
     $('.disc-container').removeClass('pause')
 })
 
@@ -71,7 +71,7 @@ $(function(){
         // $('.lyric-head').text(name),这样不行，会覆盖h1下的标签。
         // console.log(singer)
         // $('.singer').text(singer)
-        video.src = song
+        audio.src = song
         let array = lyric.split('\n')
         let reg = /\[(.*)\](.+)/
         let arr = []
@@ -95,7 +95,7 @@ $(function(){
 })
 
 setInterval(function(){
-     let time = video.currentTime
+     let time = audio.currentTime
      let minute = ~~(time/60)
      let newminute = (minute>9)?minute:'0'+minute
      let second = time - minute*60
@@ -124,7 +124,7 @@ setInterval(function(){
     })
 },300)
 //播放结束后一切还原,但旋转的图片没还原只是暂停
-video.addEventListener('ended',function(){
+audio.addEventListener('ended',function(){
     $('.lyric-moving').css('transform','translateY(0px)')
     //经测试要自动点‘暂停-播放-暂停'，用户再点“播放”时，才会有歌曲重新播放
     $('.icon-pause').click()
