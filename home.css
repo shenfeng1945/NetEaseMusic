@@ -501,21 +501,14 @@ input[type=search] {
     position:relative;
     margin-right:8px;
     margin-bottom:8px;
-    padding: 5px 14px;
+    /*padding: 5px 14px;*/
     line-height:22px;
-}
-.tabs-content3 .hot-search ul.hot-lists li::after{
-    content:'';
-    display: block;
-    position:absolute;
-    left:0;
-    top:0;
-    width:200%;
-    height:200%;
-    border-radius:32px;
     border:1px solid rgba(0,0,0,.2);
-    transform:scale(.5);
-    transform-origin:0 0;
+    border-radius: 34px;
+}
+.tabs-content3 .hot-search ul.hot-lists li >a{
+    display: block;
+    padding:5px 14px;
 }
 .tabs-content3 .searchAll h3{
     position:relative;
