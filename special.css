@@ -27,33 +27,33 @@ body{
     position:absolute;
     left:0;
     top:0;
-    max-width:100%;
+    width:100%;
     z-index:-1;
 }
 .art-head .name{
     position:absolute;
-    bottom:7px;
-    font-size:17px;
+    bottom: 2.1875vw;
+    font-size: 5.3125vw;
     color:red;
-    left:15px;
+    left: 4.6875vw;
 
 }
 
 /*summary*/
 .summary{
-    padding:10px 15px 0;
+    padding:3.125vw 4.6875vw 0;
     position:relative;
 }
 .summary p{
-    font-size:14px;
+    font-size: 4.375vw;
     color:#666;
 }
 .summary svg.icon{
     position:absolute;
     right:5%;
-    bottom:-15px;
-    width:15px;
-    height:15px;
+    bottom:-4.6875vw;
+    width: 4.6875vw;
+    height: 4.6875vw;
     fill:#BFBFC0;
 }
 .summary svg.down{
@@ -70,15 +70,15 @@ body{
 }
 /*hot-songs*/
 .hot-songs{
-    margin-top:18px;
-    margin-bottom:66px;
+    margin-top: 5.625vw;
+    margin-bottom: 20.625vw;
 }
 .hot-songs > h3{
-    font-size:12px;
+    font-size: 3.75vw;
     background:#EEEFF0;
-    padding:0 10px;
+    padding:0 3.125vw;
     color:#666;
-    line-height:23px;
+    line-height: 7.1875vw;
 }
 .hot-songs > ul{}
 .hot-songs > ul li{}
@@ -87,9 +87,9 @@ body{
     align-items:center;
 }
 .hot-songs a .number{
-    line-height:55px;
-    width:40px;
-    font-size:17px;
+    line-height: 17.1875vw;
+    width: 12.5vw;
+    font-size: 5.3125vw;
     color:#999;
     text-align:center;
 }
@@ -98,7 +98,7 @@ body{
     flex-grow:1;
     align-items:center;
     position:relative;
-    padding:8px 0;
+    padding:2.5vw 0;
 }
 .hot-songs a .list-play-wrap::after{
     content:'';
@@ -115,24 +115,24 @@ body{
     flex-grow:1;
 }
 .hot-songs a .list-item h3{
-    font-size:17px;
+    font-size: 5.3125vw;
     color:#333;
 }
 .hot-songs a .list-item p{
-    font-size:12px;
+    font-size: 3.75vw;
     color:#888;
 }
 .hot-songs a .play{
-    padding:0 10px;
+    padding:0 3.125vw;
 }
 .hot-songs a .play > svg{
-    width:22px;
-    height:22px;
+    width: 6.875vw;
+    height: 6.875vw;
     vertical-align:middle;
 }
 /*bottom-bar*/
 .bottom-bar{
-    padding:7px 0;
+    padding:2.1875vw 0;
     /*text-align:center;*/
     position:fixed;
     left:0;
@@ -149,15 +149,15 @@ body{
     color:white;
     background:#D43B32;
     display: inline-block;
-    line-height:30px;
-    padding:5px 70px;
-    border-radius: 40px;
+    line-height: 9.375vw;
+    padding: 1.5625vw 21.875vw;
+    border-radius: 12.5vw;
 
 }
 .bottom-bar .download1 svg{
     display: inline-block;
-    width:23px;
-    height:23px;
+    width: 7.1875vw;
+    height: 7.1875vw;
     vertical-align: middle;
 }
 

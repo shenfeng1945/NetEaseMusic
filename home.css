@@ -305,10 +305,10 @@ input[type=search] {
 }
 
 .tabs-content2 .hot-banner .hot-notice{
-   background: url('https://i.loli.net/2017/08/22/599c513e4c3f0.png') no-repeat -24px -30px;
+   background: url('https://i.loli.net/2017/08/22/599c513e4c3f0.png') no-repeat -7.5vw -9.375vw;
     width: 44.375vw;
     height: 20.9375vw;
-    background-size:166px 97px;
+    background-size: 51.875vw 30.3125vw;
     margin-top: 4.6875vw;
 }
 .tabs-content2 .hot-banner .date{
@@ -378,9 +378,9 @@ input[type=search] {
     color:#888;
 }
 .tabs-content2 .hot-lists .hot-item p{
-    font-size:12px;
+    font-size: 3.75vw;
     color:#888;
-    padding:1px 0;
+    padding: 0.3125vw 0;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;

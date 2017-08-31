@@ -43,8 +43,8 @@ body{
 
 }
 .disc-container .pointer img{
-   width:84px;
-   height:122px;
+   width: 26.25vw;
+   height: 35vw;
 }
 .disc-container .disc{
     position:relative;
@@ -52,14 +52,14 @@ body{
     justify-content:center;
     flex-direction: column;
     align-items:center; */
-    margin-top:63px;
-    height:248px;
+    margin-top: 16.25vw;
+    height: 77.5vw;
 }
 .disc-container .disc .icon-wrap{
     /* position:absolute; */
     z-index:1;
-    width:50px;
-    height:50px;
+    width: 15.625vw;
+    height: 15.625vw;
     border:1px solid white;
     border-radius:50%;
     display: flex;
@@ -90,18 +90,18 @@ body{
 .disc-container .disc .icon{
     /*position: absolute;*/
     fill:white;
-    width:18px;
-    height:18px;
+    width: 5.625vw;
+    height: 5.625vw;
     /*z-index:2;*/
 }
 .disc-container .disc .ring{
     display: block;
-    width:248px;
+    width: 77.5vw;
     margin:0 auto;
 }
 .disc-container .disc .light{
     /* position:absolute; */
-    width:248px;
+    width: 77.5vw;
     animation: circling 20s linear infinite;
     animation-play-state: running;
 }
@@ -109,12 +109,12 @@ body{
     animation-play-state: paused;
 }
 .disc-container .disc .center-image{
-    width:150px;
+    width: 46.875vw;
     border-radius:50%;
     animation: circling 20s linear infinite;
     animation-play-state: running;
     z-index:2;
-    height:150px;
+    height: 46.875vw;
 }
 .disc-container.pause .disc .center-image{
     animation-play-state: paused;
@@ -122,12 +122,12 @@ body{
 
 .lyrics{
     text-align:center;
-    padding:0 35px;
-    margin-top:22px;
+    padding:0 10.9375vw;
+    margin-top: 6.875vw;
     z-index:1;
 }
 .lyrics .lyric-head{
-    font-size:15px;
+    font-size: 4.6875vw;
     color:#fefefe;
     overflow: hidden;
     text-overflow:ellipsis;
@@ -135,21 +135,21 @@ body{
 }
 .lyrics .lyric-head > span{
     color: hsla(0,0%,100%,.6);
-    font-size:13px;
+    font-size: 4.0625vw;
 }
 .lyrics .lyric-content{
-   margin-top:13px;
-    height:72px;
+   margin-top: 4.0625vw;
+    height: 22.5vw;
     overflow:hidden;
 }
 .lyrics .lyric-content .lyric-moving{
     transition:transform .3s linear;
 }
 .lyrics .lyric-content p{
-    font-size:13px;
+    font-size: 4.0625vw;
     color:rgba(255,255,255,.6);
-    line-height:19px;
-    padding-bottom:5px;
+    line-height: 5.9375vw;
+    padding-bottom: 1.5625vw;
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
@@ -163,7 +163,7 @@ body{
     /*justify-content: center;*/
     position:absolute;
     left:50%;
-    bottom:10px;
+    bottom: 3.125vw;
     transform:translateX(-50%);
     width:100%;
     z-index:1;
@@ -174,18 +174,18 @@ body{
 }
 .links .open{
     color:#d43b32;
-    font-size:15px;
+    font-size: 4.6875vw;
     border:1px solid #d43b32;
-    padding:7px 42px;
-    border-radius:4px;
+    padding:2.1875vw 13.125vw;
+    border-radius: 1.25vw;
 }
 .links .download{
-    font-size:15px;
+    font-size: 4.6875vw;
    background:#d43b32;
     color:white;
-    padding:7px 42px;
-    border-radius:4px;
-    margin-left:12px;
+    padding:2.1875vw 13.125vw;
+    border-radius: 1.25vw;
+    margin-left: 3.75vw;
 }
 
 
