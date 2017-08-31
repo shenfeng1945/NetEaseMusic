@@ -154,7 +154,7 @@ $output.on('input',function(){
                                 <svg>
                                     <use xlink:href="#icon-search"></use>
                                 </svg>
-                                <span>${name} ${singer}</span>
+                                <span>${name} - ${singer}</span>
                        </a>
                   </li>
                  `
