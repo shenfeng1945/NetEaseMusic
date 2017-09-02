@@ -44,7 +44,7 @@ body{
 }
 .disc-container .pointer img{
    width: 26.25vw;
-   height: 35vw;
+   min-height: 35vw;
 }
 .disc-container .disc{
     position:relative;
@@ -59,7 +59,7 @@ body{
     /* position:absolute; */
     z-index:1;
     width: 15.625vw;
-    height: 15.625vw;
+    min-height: 15.625vw;
     border:1px solid white;
     border-radius:50%;
     display: flex;
@@ -91,7 +91,8 @@ body{
     /*position: absolute;*/
     fill:white;
     width: 5.625vw;
-    height: 5.625vw;
+    min-height: 5.625vw;
+
     /*z-index:2;*/
 }
 .disc-container .disc .ring{
@@ -114,7 +115,7 @@ body{
     animation: circling 20s linear infinite;
     animation-play-state: running;
     z-index:2;
-    height: 46.875vw;
+    min-height: 46.875vw;
 }
 .disc-container.pause .disc .center-image{
     animation-play-state: paused;
