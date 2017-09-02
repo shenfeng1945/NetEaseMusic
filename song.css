@@ -92,7 +92,7 @@ body{
     /*position: absolute;*/
     fill:white;
     width: 5.625vw;
-    min-height: 5.625vw;
+    height: 5.625vw;
 
     /*z-index:2;*/
 }
@@ -116,7 +116,7 @@ body{
     animation: circling 20s linear infinite;
     animation-play-state: running;
     z-index:2;
-    min-height: 46.875vw;
+    height: 46.875vw;
 }
 .disc-container.pause .disc .center-image{
     animation-play-state: paused;
