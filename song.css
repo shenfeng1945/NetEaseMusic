@@ -60,7 +60,7 @@ body{
     /* position:absolute; */
     z-index:1;
     width: 15.625vw;
-    min-height: 15.625vw;
+    height: 15.625vw;
     border:1px solid white;
     border-radius:50%;
     display: flex;
@@ -165,7 +165,7 @@ body{
     /*justify-content: center;*/
     position:absolute;
     left:50%;
-    bottom: 3.125vw;
+    bottom: 6.25vw;
     transform:translateX(-50%);
     width:100%;
     z-index:1;
