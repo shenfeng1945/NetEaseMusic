@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page tabs">
         <div class="top-control-wrapper">
               <section class="top-bar">
             <div class="logo">
@@ -24,7 +24,7 @@
          <div class="download">下载APP</div>
         </section>
         <section class="tabs-control">
-            <ol class="tabs border-bottom">
+            <ol class="tabs-nav border-bottom">
                 <li class="active">
                     <div><span>推荐音乐</span></div>
                 </li>
@@ -39,7 +39,7 @@
         </div>
 
         <ol class="tabsContent">
-            <li class="tabs-content1 active">
+           <li class="tabs-content1 active">
             <div class="recommend-list">
                 <h2 class="sectionTitle">推荐歌单</h2>
                 <ol class="lists">
@@ -115,7 +115,7 @@
                <div class="button">打开APP，发现更多好音乐></div>
                 <p class="copyright">网易公司版权所有©1997-2017   杭州乐读科技有限公司运营</p>
             </div>
-            </li>
+          </li>
             <li class="tabs-content2">
                 <div class="hot-banner noCollapse">
                     <div class="hot-notice"></div>
@@ -191,4 +191,25 @@
 <script src="./JS/av.js"></script>
 <script src="./JS/iconFont.js"></script>
 <script src="./home.js"></script>
+<script>
+    // window.app = {}
+    // window.loadScript = function(url,callback){
+    //     let script = document.createElement('script')
+    //     script.src = url
+    //     script.onload = function(){callback()}
+    //     document.head.appendChild(script)
+    // }
+</script>
+<script>
+    // if(! app.tabs){
+    //     //如果找不到，就自己去加载
+    //     loadScript('./home.js',function(){
+    //         app.tabs('.tabs')
+    //     })
+    // }else{
+       window.tabs('.tabs')
+    // }
+</script>
+<script src="./src/loadSongs.js"></script>
+<script src="./src/search.js"></script>
 </html>
