@@ -1,5 +1,10 @@
-require(['../home.js','./load-songs','./search'],function(tabs,loadSongs,doIt){
-   tabs('.tabs')
-   loadSongs()
-   doIt()
+require(['load-songs','search','home'],function(loadSongs,doIt,tabs){
+    tabs('.tabs')
+    loadSongs()
+    doIt()
+})
+require.config({
+    paths:{
+        "home": "../home"
+    }
 })
