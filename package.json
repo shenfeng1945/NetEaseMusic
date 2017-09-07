@@ -11,6 +11,7 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "leancloud": "0.0.0",
-    "leancloud-storage": "^3.1.1"
+    "leancloud-storage": "^3.1.1",
+    "requirejs": "^2.3.5"
   }
 }

@@ -1,7 +1,7 @@
 /**
  * Created by lzc on 2017/8/22.
  */
-!function ($,window) {
+define(function(){
     function tabs(selectorOrDom) {
         let $tabs = $(selectorOrDom)
         $tabs.on('click', '.tabs-nav > li', function () {
@@ -12,7 +12,6 @@
             $li.closest('.tabs').find('.tabsContent').children().eq(index).addClass('active').siblings('.active').removeClass('active')
         })
     }
-    //我们能暴露的东西都放在window上
-    window.tabs = tabs
-}(jQuery,window)
+return tabs;
+})
 

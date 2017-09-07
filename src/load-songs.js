@@ -1,5 +1,4 @@
-!function ($,AV,window) {
-    loadSongs()
+define(function () {
     function loadSongs() {
         let count = 0
         getSongs().then(fillSongs, function (error) {
@@ -125,4 +124,5 @@
             }
         }
     }
-}(jQuery,AV,window)
+    return loadSongs
+})

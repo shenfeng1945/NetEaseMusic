@@ -1,11 +1,14 @@
-!function ($,AV,window) {
+define(function () {
     //搜索框
     let timer = null
-    $('#output').on('input', function (e) {
-        throttle(function () {
-            searchValue(e.currentTarget)
-        }, 400)
-    })
+    function doIt() {
+        $('#output').on('input', function (e) {
+            throttle(function () {
+                searchValue(e.currentTarget)
+            }, 400)
+        })
+    }
+return doIt;
     function throttle(callback, time) {
         //函数节流
         if (timer) { window.clearTimeout(timer) }
@@ -71,4 +74,4 @@
         $('.searchAll > h3').html(`搜索“${value}”`)
         getSongs(value).then(displaySongs)
     }
-}(jQuery,AV,window)
+})

@@ -190,16 +190,7 @@
 <script src="./vendors/av-min.js"></script>
 <script src="./JS/av.js"></script>
 <script src="./JS/iconFont.js"></script>
-<script src="./home.js"></script>
-<script>
-    // window.app = {}
-    // window.loadScript = function(url,callback){
-    //     let script = document.createElement('script')
-    //     script.src = url
-    //     script.onload = function(){callback()}
-    //     document.head.appendChild(script)
-    // }
-</script>
+<!-- <script src="./home.js"></script> -->
 <script>
     // if(! app.tabs){
     //     //如果找不到，就自己去加载
@@ -207,9 +198,11 @@
     //         app.tabs('.tabs')
     //     })
     // }else{
-       window.tabs('.tabs')
+    //    window.tabs('.tabs')
+    //    https://zhuanlan.zhihu.com/p/29020657?utm_medium=social&utm_source=ZHShareTargetIDMore
     // }
 </script>
-<script src="./src/loadSongs.js"></script>
-<script src="./src/search.js"></script>
+<script data-main="src/main" src="./vendors/require.js"></script>
+<!-- <script src="./src/loadSongs.js"></script> -->
+<!-- <script src="./src/search.js"></script> -->
 </html>
