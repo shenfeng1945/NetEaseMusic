@@ -137,7 +137,8 @@ body{
 .lyrics{
     text-align:center;
     padding:0 10.9375vw;
-    margin-top: 6.875vw;
+    /*margin-top: 6.875vw;*/
+    margin-top: 6.1875vw;
     z-index:1;
 }
 .lyrics .lyric-head{
