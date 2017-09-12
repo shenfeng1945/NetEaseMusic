@@ -435,8 +435,8 @@ input[type=search] {
 /*.....................第三个页面.....................*/
 .tabs-content3{
     display: none;
-    background:#FBFCFD;
-    height:100vh;
+    /*background:#FBFCFD;*/
+    /*height:100vh;*/
 }
 .tabs-content3.active{
     display: block;
