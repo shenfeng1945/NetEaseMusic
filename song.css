@@ -6,9 +6,9 @@ body{
     background-size:cover;
     display: flex;
     flex-direction:column;
-    /*min-height:100vh;*/
+    min-height:100vh;
     position: relative;
-    padding-bottom:40.625vw;
+    /*padding-bottom:40.625vw;*/
 }
 .center{
     position: absolute;
@@ -44,8 +44,10 @@ body{
 
 }
 .disc-container .pointer img{
-   width: 26.25vw;
-   min-height: 35vw;
+   /*width: 26.25vw;*/
+   /*height: 35vw;*/
+   width: 23.625vw;
+   height: 31.5vw;
 }
 .disc-container .disc{
     position:relative;
@@ -53,14 +55,18 @@ body{
     justify-content:center;
     flex-direction: column;
     align-items:center; */
-    margin-top: 19.6875vw;
-    height: 77.5vw;
+    /*margin-top: 19.6875vw;*/
+    margin-top: 17.71875vw;
+    /*height: 77.5vw;*/
+    height: 69.75vw;
 }
 .disc-container .disc .icon-wrap{
     /* position:absolute; */
     z-index:1;
-    width: 15.625vw;
-    height: 15.625vw;
+    /*width: 15.625vw;*/
+    /*height: 15.625vw;*/
+    width: 14.0625vw;
+    height: 14.0625vw;
     border:1px solid white;
     border-radius:50%;
     display: flex;
@@ -91,19 +97,23 @@ body{
 .disc-container .disc .icon{
     /*position: absolute;*/
     fill:white;
-    width: 5.625vw;
-    height: 5.625vw;
+    /*width: 5.625vw;*/
+    /*height: 5.625vw;*/
+    width: 5vw;
+    height: 5vw;
 
     /*z-index:2;*/
 }
 .disc-container .disc .ring{
     display: block;
-    width: 77.5vw;
+    /*width: 77.5vw;*/
+    width: 69.75vw;
     margin:0 auto;
 }
 .disc-container .disc .light{
     /* position:absolute; */
-    width: 77.5vw;
+    /*width: 77.5vw;*/
+    width: 69.75vw;
     animation: circling 20s linear infinite;
     animation-play-state: running;
 }
@@ -111,12 +121,14 @@ body{
     animation-play-state: paused;
 }
 .disc-container .disc .center-image{
-    width: 46.875vw;
+    /*width: 46.875vw;*/
+    width: 42.1875vw;
     border-radius:50%;
     animation: circling 20s linear infinite;
     animation-play-state: running;
     z-index:2;
-    height: 46.875vw;
+    /*height: 46.875vw;*/
+    height: 42.1875vw;
 }
 .disc-container.pause .disc .center-image{
     animation-play-state: paused;
