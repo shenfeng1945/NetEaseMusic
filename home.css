@@ -301,7 +301,18 @@ input[type=search] {
     padding-left: 6.25vw;
     /*padding-top:.1px;*/
     padding-bottom: 5vw;
-    /*position:relative;*/
+    position:relative;
+}
+.tabs-content2 .hot-banner::after{
+    content:'';
+    display: block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.2);
+    z-index:0;
 }
 
 .tabs-content2 .hot-banner .hot-notice{
@@ -310,6 +321,8 @@ input[type=search] {
     height: 20.9375vw;
     background-size: 51.875vw 30.3125vw;
     margin-top: 4.6875vw;
+    position: relative;
+    z-index:1;
 }
 .tabs-content2 .hot-banner .date{
    font-size: 3.75vw;
@@ -317,6 +330,8 @@ input[type=search] {
     color: rgba(255,255,255,.8);
     transform:scale(.91);
     transform-origin: 0 0;
+    position: relative;
+    z-index:1;
 }
 /*热歌列表*/
 .tabs-content2 .hot-lists{
