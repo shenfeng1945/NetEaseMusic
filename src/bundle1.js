@@ -70,13 +70,13 @@
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__search__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__load_songs__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_search__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_load_songs__ = __webpack_require__(3);
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_2__load_songs__["a" /* default */])()
-Object(__WEBPACK_IMPORTED_MODULE_1__search__["a" /* default */])()
+Object(__WEBPACK_IMPORTED_MODULE_2__src_load_songs__["a" /* default */])()
+Object(__WEBPACK_IMPORTED_MODULE_1__src_search__["a" /* default */])()
 Object(__WEBPACK_IMPORTED_MODULE_0__home__["a" /* default */])('.tabs')
 
 
