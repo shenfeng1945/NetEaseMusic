@@ -5,6 +5,6 @@ module.exports = {
         bundle3: './src/main3'
     },
     output: {
-        filename: '[name].js'
+        filename: './src/[name].js'
     }
 }
