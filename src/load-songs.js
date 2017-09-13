@@ -1,5 +1,4 @@
-define(function () {
-    function loadSongs() {
+export default function loadSongs() {
         let count = 0
         getSongs().then(fillSongs, function (error) {
             alert('获取歌词失败')
@@ -124,5 +123,3 @@ define(function () {
             }
         }
     }
-    return loadSongs
-})

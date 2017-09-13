@@ -4,7 +4,9 @@
   "description": "网易云音乐",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bulid": "webpack",
+    "watch": "webpack -w",
+    "deploy": "webpack -p"
   },
   "author": "",
   "license": "ISC",

@@ -1,8 +1,7 @@
 /**
  * Created by lzc on 2017/8/22.
  */
-define(function(){
-    function tabs(selectorOrDom) {
+export default function tabs(selectorOrDom) {
         let $tabs = $(selectorOrDom)
         $tabs.on('click', '.tabs-nav > li', function () {
             let $li = $(this)
@@ -12,6 +11,4 @@ define(function(){
             $li.closest('.tabs').find('.tabsContent').children().eq(index).addClass('active').siblings('.active').removeClass('active')
         })
     }
-return tabs;
-})
 

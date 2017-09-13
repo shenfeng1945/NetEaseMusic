@@ -1,12 +1,12 @@
+export default function speicial(){
 var query = new AV.Query('Song');
 let url = window.location.href
 let reg = /.*\=(.*)/
-let number = url.match(reg)[1]
+let number = url.match(reg)['1']
 let count = 0
 //默认全局隐藏，现loading
 // $('.page').addClass('hidden')
 query.find().then(function (results) {
-    console.log('1')
     for(var i=0;i<results.length;i++){
         let array = results[i].attributes
         let id = results[i].id
@@ -46,7 +46,6 @@ query.find().then(function (results) {
     $('.page').removeClass('hidden')
     $('.loading').remove()
 })
-
     function getMessage(options){
         let {fullname,head,summary} = options
         let $img = document.querySelector('.art-head > img')
@@ -55,5 +54,5 @@ query.find().then(function (results) {
         $('.summary > p').text(summary)
         $('head title').text(`${fullname}- 网易云音乐`)
     }
-
+}
 

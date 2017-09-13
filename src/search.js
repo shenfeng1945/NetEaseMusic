@@ -1,14 +1,12 @@
-define(function () {
     //搜索框
     let timer = null
-    function doIt() {
+export default function doIt() {
         $('#output').on('input', function (e) {
             throttle(function () {
                 searchValue(e.currentTarget)
             }, 400)
         })
     }
-return doIt;
     function throttle(callback, time) {
         //函数节流
         if (timer) { window.clearTimeout(timer) }
@@ -74,4 +72,3 @@ return doIt;
         $('.searchAll > h3').html(`搜索“${value}”`)
         getSongs(value).then(displaySongs)
     }
-})
