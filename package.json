@@ -15,5 +15,10 @@
     "leancloud": "0.0.0",
     "leancloud-storage": "^3.1.1",
     "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2"
   }
 }
