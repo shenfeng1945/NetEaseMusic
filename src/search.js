@@ -43,7 +43,7 @@ export default function doIt() {
         $('.searchAll > h3').empty()
         $('.searchAll  li').empty()
         $('#searchResults').html(null)
-        return
+        return 
     }
     function displaySongs(result) {
         //每次进来之前清空这个没有结果

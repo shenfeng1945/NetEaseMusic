@@ -1,8 +1,4 @@
-/**
- * Created by lzc on 2017/8/23.
- */
 export default function song(){
-
 var query = new AV.Query('Song');
 let audio = document.createElement('audio')
 //让音频内联播放 ios10
@@ -72,7 +68,6 @@ $(function(){
         audio.src = song
         let array = lyric.split('\n')
         let reg = /\[(.*)\](.+)/
-        let arr = []
         let $lyric = $('.lyric-moving')
         array = array.map((string) => {
             let obj = {}
