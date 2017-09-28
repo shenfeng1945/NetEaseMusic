@@ -657,6 +657,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__home_css__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reset_css__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__reset_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__reset_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__JS_av__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__JS_av___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__JS_av__);
+
 
 
 
@@ -948,6 +951,19 @@ exports.push([module.i, "body{\r\n    font-size:4.6875vw;\r\n    font-family: He
 
 // exports
 
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+//初始化AV.min.js
+var APP_ID = '82InV9gcyTzIw099BrTuO1wd-gzGzoHsz';
+var APP_KEY = 'qCBb2prMElwslrBNaryawyER';
+
+AV.init({
+    appId: APP_ID,
+    appKey: APP_KEY
+});
 
 /***/ })
 /******/ ]);
