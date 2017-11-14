@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 module.exports = {
     entry: {
         bundle1: './src/main1',
@@ -21,5 +22,12 @@ module.exports = {
              ]
            }
      ]
-   }
+   },
+   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    })
+  ]
 }
