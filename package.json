@@ -6,7 +6,8 @@
   "scripts": {
     "bulid": "webpack",
     "watch": "webpack -w",
-    "deploy": "webpack -p"
+    "deploy": "webpack -p",
+    "css":"postcss --use autoprefixer --dir css/ ./*.css"
   },
   "author": "",
   "license": "ISC",
